@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+nav {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.fa-home {
+  color: white;
+  
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fa-user-circle {
+  color: white;
+}
+
+.box {
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid white;
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  color: white;
+  font-size: small;
+}
+
+.fa-ellipsis-v {
+  color: white;
+}
+.google-text {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: white;
+
+}
+.google-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.google {
+  margin-top: 40px;
+}
+
+.center{
+  margin-bottom: 40px;
+}
+
+#search {
+  padding: 10px 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  transition: 0.2s;
+
+
+}
+
+
+.search-bar {
+  position: relative;
+}
+
+.form-control {
+  border-radius: 20px;
+  background-color: lightgray;
+}
+.fa-microphone {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: black;
+}
+.apps{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ac {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  
+}
+
+.app {
+  margin: 10px ;
+  color: white;
+}
+
+.app-active{
+  color: red;
+}
+
+.articles {
+  color: white;
+  padding: 10px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.article {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border: 1px solid silver;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: small;
+  
+}
+.article p,
+.article img {
+  padding: 10px;
+}
+
+.article img {
+  height: 85%;
+  width: 100%;
+}
+
+.article .i img{
+  border-radius: 20%;
+  
+}
+
+.menu-options{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  width: 250px;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  overflow: scroll;
+}
+
+.top{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 5px;
+}
+
+.top i,.top img,.side p{
+  cursor: pointer;
+}
+
+.side{
+  margin-top: 20px;
+  padding: 0px 10px;
+
+}
+
+#inp{
+  margin-top: 5px;
+  float: right;
+  
+}

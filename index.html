@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://kit.fontawesome.com/ff4a6a8772.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="Css Files/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Trickywricky</title>
+</head>
+<body>
+  <div id="full-body">
+    <div class="menu-options">
+      <div class="top">
+          <i class="fas fa-arrow-right"></i>
+          <i class="far fa-star"></i>
+          <i class="fas fa-arrow-down"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="20" height="20"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g id="original-icon" fill="#ffffff"><path d="M86,0c-47.50716,0 -86,38.49284 -86,86c0,47.50716 38.49284,86 86,86c47.50716,0 86,-38.49284 86,-86c0,-47.50716 -38.49284,-86 -86,-86zM86,14.33333c39.58464,0 71.66667,32.08203 71.66667,71.66667c0,39.58464 -32.08203,71.66667 -71.66667,71.66667c-39.58463,0 -71.66667,-32.08203 -71.66667,-71.66667c0,-39.58463 32.08203,-71.66667 71.66667,-71.66667zM86,41.65625c-1.31576,0 -2.40755,-0.02799 -3.58333,0.22396c-1.17578,0.25195 -2.26758,0.89583 -3.13542,1.56771c-0.86784,0.67188 -1.51172,1.5957 -2.01562,2.6875c-0.5039,1.0918 -0.67187,2.37956 -0.67187,4.03125c0,1.6237 0.16797,2.91146 0.67188,4.03125c0.50391,1.11979 1.14778,2.01563 2.01563,2.6875c0.86784,0.67188 1.95964,1.06381 3.13542,1.34375c1.17578,0.27995 2.26758,0.44792 3.58333,0.44792c1.28776,0 2.65951,-0.16797 3.80729,-0.44792c1.14778,-0.27994 2.04362,-0.67187 2.91146,-1.34375c0.86784,-0.67187 1.51172,-1.56771 2.01563,-2.6875c0.50391,-1.0918 0.89583,-2.40755 0.89583,-4.03125c0,-1.65169 -0.39192,-2.93945 -0.89583,-4.03125c-0.5039,-1.0918 -1.14778,-2.01562 -2.01562,-2.6875c-0.86784,-0.67187 -1.76367,-1.31576 -2.91146,-1.56771c-1.14778,-0.25195 -2.51953,-0.22396 -3.80729,-0.22396zM77.26563,65.61979v64.27604h17.46875v-64.27604z"></path></g></g></svg>
+          <i class="fas fa-redo"></i>
+      </div>
+      <div class="side">
+          <p>New tab</p>
+          <p>New incognito tab</p>
+          <p>Bookmarks</p>
+          <p>Recent tabs</p>
+          <p>History</p>
+          <p>Downloads</p>
+          <p>Desktop site <input type="checkbox" id="inp"> </p>
+          <p>Settings</p>
+          <p>Help & feedback</p>
+      </div>
+  </div>
+  
+    <nav>
+      <div class="left">
+        <i class="fas fa-home "></i>
+      </div>
+      <div class="right">
+        <i class="fas fa-user-circle fa-lg"></i>
+        <p class="box">1</p>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </nav>
+    <section class="center">
+      <div class="google">
+        <div class="google-text">
+          <h1>Google</h1>
+        </div>
+      </div>
+    </section>
+  
+    <section id="search" >
+      <div class="search-bar position-sticky form-group" >
+        <input type="text" class="form-control" id="sbtn" onclick="disPlay()" placeholder="Search or type web address">
+        <i class="fas fa-microphone"></i>
+      </div>
+    </section>
+  
+    <section class="apps">
+      <div class="ac">
+        <a href="#"><i class="fab fa-facebook-square fa-3x  app"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-3x  app"></i></a>
+        <a href="#"><i class="fab fa-twitter-square fa-3x  app"></i></a>
+        <a href="#"><i class="fab fa-pinterest-square fa-3x  app"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square fa-3x  app"></i></a>
+        <a href="#"><i class="fab fa-github-square fa-3x  app"></i></a>
+        <a href="#"><i class="fab fa-youtube-square fa-3x  app"></i></a>
+        <a href="#"><i class="fab fa-google-drive fa-3x  app"></i></a>
+      </div>
+    </section>
+    <section class="art">
+      <div class="articles">
+        <div class="article">
+          <div class="p">
+            <p>A new coronavirus associated with human respiratory disease in China</p>
+          </div>
+          <div class="i">
+            <img src="https://media.springernature.com/w500h319/springer-static/image/art%3A10.1038%2Fs41586-020-2008-3/MediaObjects/41586_2020_2008_Fig1_HTML.png" >
+          </div>
+        </div>
+        <div class="article">
+          <div class="p">
+            <p>A pneumonia outbreak associated with a new coronavirus of probable bat origin</p>
+          </div>
+          <div class="i">
+            <img src="https://media.springernature.com/w500h319/springer-static/image/art%3A10.1038%2Fs41586-020-2012-7/MediaObjects/41586_2020_2012_Fig1_HTML.png" >
+          </div>
+        </div>
+        <div class="article">
+          <div class="p">
+            <p>Estimating clinical severity of COVID-19 from the transmission dynamics in Wuhan, China</p>
+          </div>
+          <div class="i">
+            <img src="https://media.springernature.com/w500h319/springer-static/image/art%3A10.1038%2Fs41591-020-0822-7/MediaObjects/41591_2020_822_Fig1_HTML.png" >
+          </div>
+        </div>
+        <div class="article">
+          <div class="p">
+            <p>In the fight against the new coronavirus outbreak, we must also struggle with human bias</p>
+          </div>
+          <div class="i">
+            <img src="https://media.springernature.com/w500h319/springer-static/image/art%3A10.1038%2Fs41591-020-0802-y/MediaObjects/41591_2020_802_Figa_HTML.jpg" >
+          </div>
+        </div>
+        <div class="article">
+          <div class="p">
+            <p>Insights from nanomedicine into chloroquine efficacy against COVID-19</p>
+          </div>
+          <div class="i">
+            <img src="https://media.springernature.com/w500h319/springer-static/image/art%3A10.1038%2Fs41565-020-0674-9/MediaObjects/41565_2020_674_Fig1_HTML.png" >
+          </div>
+        </div>
+        <div class="article">
+          <div class="p">
+            <p>COVID-19: faecal–oral transmission?</p>
+          </div>
+          <div class="i">
+            <img src="https://media.springernature.com/w500h319/springer-static/image/art%3A10.1038%2Fs41575-020-0295-7/MediaObjects/41575_2020_295_Figa_HTML.jpg" >
+          </div>
+        </div>
+  
+    </section>
+    <section class="menu-man">
+      
+    </section>
+  </div>
+  
+  <script type="text/javascript" src="JavaScripts/main.js"></script>
+</body>
+
+</html>
