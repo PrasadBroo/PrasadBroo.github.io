@@ -1,73 +1,157 @@
-const body = document.querySelector("body");
-const search = document.getElementById("search");
-const inp = document.querySelector(".form-control");
-const searchBar = document.querySelector(".search-bar");
-const mic = document.querySelector(".fa-microphone");
-const menu = document.querySelector(".fa-ellipsis-v");
-const app = document.querySelectorAll(".app");
-const btn = document.getElementById("sbtn");
-const nav = document.querySelector("nav");
-const menuHide = document.querySelector(".menu-options");
-const backbtn = document.querySelector(".fa-arrow-right");
-const tab = document.querySelector(".box");
-const fbody = document.getElementById("full-body");
+const boxes = document.querySelectorAll(".same ");
+const hh3 = document.querySelectorAll(".same h3");
+const playerMsg = document.querySelector(".p");
+const botMsg = document.querySelector(".b");
+const playerName = document.querySelector(".pname");
 
 
 
-window.onscroll= function(){scrollFuc()};
+let userPlayed = false;
+let userChoice,botChoice;
+let userName = prompt("Your Good Name?");
+let choices = ["X","O"];
+let winList = [[1, 2, 3],[4, 5, 6],[7, 8, 9],[1, 4, 7],[2, 5, 8],[3, 6, 9],[1, 5, 9],[3, 5, 7]];
 
-function scrollFuc(){
-    if (document.body.scrollTop > 290 || document.documentElement.scrollTop > 290) {
-        search.style.padding="0";
-        inp.style.backgroundColor="white";
-        searchBar.style.backgroundColor="#333";
-        searchBar.style.padding="10px";
-        mic.style.right="25px";
-        mic.style.top="20px";
-
-      } else {
-        search.style.padding='10px 20px';
-        searchBar.style.padding="0";
-        inp.style.backgroundColor="lightgray";
-        mic.style.right="15px";
-        mic.style.top="10px";
-      }
+window.onload = function(){
+    nameChanger();
+    randomChoice();
+    choiceMaker();
+    mainBoss();
 }
 
-btn.addEventListener("click",change);
 
-function change(){
-  search.style.padding="0";
-  searchBar.style.backgroundColor="#333";
-  searchBar.style.padding="5px 10px";
-  searchBar.style.transform="translate(0,-190px)";
-  mic.style.right="25px";
-  mic.style.top="20px";
-  nav.style.padding="0";
-  inp.style.backgroundColor="white";
-
-}
-
-menu.addEventListener("click",showMenu);
-
-function showMenu(){
-  menuHide.style.display="block";
-  menuHide.animate([{opacity:'0.1'},{opacity:'1.0'}],{duration:500,fill:"forwards"});
-
-}
-
-backbtn.addEventListener("click",dontMenu);
-
-function dontMenu(){
-  menuHide.style.display="none";
+function nameChanger(){
+    if(userName!=""){
+        playerName.innerHTML=userName;
+    }
+    else{
+        playerName.innerHTML="Selfish";
+    }
 }
 
 
 
-for(let i=0;i<app.length;i++){
-  app[i].addEventListener('click',function(){
-    app[i].classList.toggle("app-active")
-  });
-
+function randomChoice(){
+    let rand = Math.floor(Math.random()*choices.length);
+    return userChoice=choices[rand];
 }
+
+
+function choiceMaker(){
+    if(randomChoice()=="O"){
+        botChoice="X";
+        playerMsg.innerHTML="Yours "+userChoice;
+        botMsg.innerHTML="Bots "+botChoice;
+    }
+    else{
+        botChoice="O";
+        playerMsg.innerHTML="Yours "+userChoice;
+        botMsg.innerHTML="Bots "+botChoice;
+    }
+}
+
+
+
+function mainBoss(){
+    for(let i =0;i<boxes.length;i++){
+        boxes[i].addEventListener("click",function(){
+            if(!userPlayed && hh3[i].innerHTML==""){
+                hh3[i].innerHTML=userChoice;
+                userPlayed=true;
+            }
+            else if(userPlayed && hh3[i].innerHTML==""){
+                hh3[i].innerHTML=botChoice;
+                userPlayed=false;
+            }
+            else{
+                alert("Opps")
+            }
+            winCheck();
+            checkDraw()
+        });
+    }
+}
+
+
+function winCheck(){
+    if(hh3[0].innerHTML==userChoice  && hh3[1].innerHTML==userChoice && hh3[2].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[3].innerHTML==userChoice  && hh3[4].innerHTML==userChoice && hh3[5].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[6].innerHTML==userChoice  && hh3[7].innerHTML==userChoice && hh3[8].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[0].innerHTML==userChoice  && hh3[3].innerHTML==userChoice && hh3[6].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[1].innerHTML==userChoice  && hh3[4].innerHTML==userChoice && hh3[7].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[2].innerHTML==userChoice  && hh3[5].innerHTML==userChoice && hh3[8].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[0].innerHTML==userChoice  && hh3[5].innerHTML==userChoice && hh3[8].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[2].innerHTML==userChoice  && hh3[5].innerHTML==userChoice && hh3[6].innerHTML==userChoice){
+        setTimeout(()=>{alert(userChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[0].innerHTML==botChoice  && hh3[1].innerHTML==botChoice && hh3[2].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[3].innerHTML==botChoice  && hh3[4].innerHTML==botChoice && hh3[5].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[6].innerHTML==botChoice  && hh3[7].innerHTML==botChoice && hh3[8].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[0].innerHTML==botChoice  && hh3[3].innerHTML==botChoice && hh3[6].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[1].innerHTML==botChoice  && hh3[4].innerHTML==botChoice && hh3[7].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[2].innerHTML==botChoice  && hh3[5].innerHTML==botChoice && hh3[8].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[0].innerHTML==botChoice  && hh3[5].innerHTML==botChoice && hh3[8].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else if(hh3[2].innerHTML==botChoice  && hh3[5].innerHTML==botChoice && hh3[6].innerHTML==botChoice){
+        setTimeout(()=>{alert(botChoice+" Win")},50);
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+
+function checkDraw(){
+    
+    if(hh3[0].innerHTML!="" && hh3[1].innerHTML!="" && hh3[2].innerHTML!="" && hh3[3].innerHTML!="" && hh3[4].innerHTML!="" && hh3[5].innerHTML!="" && hh3[6].innerHTML!="" && hh3[7].innerHTML!="" && hh3[8].innerHTML!=""){
+        if(!winCheck){
+            alert("Its draw");
+        }
+        
+    } 
+}
+    
 
