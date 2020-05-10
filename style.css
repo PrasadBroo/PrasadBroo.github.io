@@ -72,6 +72,7 @@ a{
 
 .same:hover{
     transform: scale(1.1);
+    
 }
 
 
@@ -90,10 +91,13 @@ img{
 }
 
 .text a{
-    color: black;
+    color: #efe;
+    background-color: #00cec9;
+    padding: 9px;
+    border-radius: 5px;
 }
 .text a:hover{
-    color: rgb(255, 134, 134);
+    color: rgb(46, 46, 46);
 }
 
 
@@ -125,7 +129,14 @@ footer a{
         transform: scale(1);
     }
 }
-
+@media screen and (min-width:800px){
+    .same{
+        transform: scale(0.9);
+    }
+    .same:hover{
+        transform: scale(1);
+    }
+}
 
 
 @media screen and (max-width:500px){
