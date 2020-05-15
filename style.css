@@ -80,6 +80,12 @@ nav h1{
 }
 
 /* Main Css Start */
+
+.allinone{
+    margin: 0 5px ;
+    padding: 0 5px;
+}
+
 .secone{
     margin-top: 30px;
     min-height: 80vh;
@@ -230,7 +236,7 @@ nav h1{
 
 .graph{
     padding: 20px;
-    /* background-color: lightgray; */
+    
 }
 .graph h1{
     font-size: 30px;
