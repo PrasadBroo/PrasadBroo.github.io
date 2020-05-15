@@ -416,7 +416,9 @@ nav h1{
     color: rgb(100, 100, 100);
 }
 .head h1{
-    transform: translateY(50px);
+    transform: translateY(80px);
+    font-size: 30px;
+    padding-left: 10px;
 }
 .para{
     text-transform: uppercase;
@@ -811,19 +813,21 @@ footer{
     .para{
         text-transform: uppercase;
         text-align: center;
-        padding: 10px;
+        padding: 0px;
         color: rgb(110, 110, 110);
         width: 100%;
     }
     .para p{
         margin-bottom: 20px;
-        
+    }
+    .p1,.p2{
+        word-break: break-all;
     }
     .p2{
         color: rgb(20, 20, 20);
         font-weight: 700;
         text-align: center;
-        font-size: 16px;
+        font-size: 15px;
     }
     .address{
         text-align: center;
@@ -841,7 +845,7 @@ footer{
     }
     .contact-two{
         flex-direction: column;
-        width: 90%;
+        width: 99%;
     }
     .wrapper{
         display: block;
@@ -853,6 +857,8 @@ footer{
     }
     .head h1{
         transform: translateY(0);
+        font-size: 25px;
+        color: black;
     }
     .my-prof-img{
         order: 1;
@@ -877,6 +883,9 @@ footer{
     }
     body{
         overflow-x: hidden;
+    }
+    .lastlinks{
+        width: 80%;
     }
     
 }
