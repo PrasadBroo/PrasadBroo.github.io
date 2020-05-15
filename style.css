@@ -788,9 +788,7 @@ footer{
         height: auto;
         width: auto;
         text-align: center;
-        margin: 20px  0;
-        
-        
+        margin: 20px  10px;
     }
     .my-prof-img img{
         /* height: 50%; */
@@ -852,9 +850,6 @@ footer{
     }
     .my-prof-img{
         order: 1;
-    }
-    body{
-        overflow-x: hidden;
     }
 
 }
