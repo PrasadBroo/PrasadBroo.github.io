@@ -851,6 +851,9 @@ footer{
     .my-prof-img{
         order: 1;
     }
+    #contactme{
+        display: none;
+    }
 
 }
 
