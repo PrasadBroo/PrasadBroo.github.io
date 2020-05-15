@@ -853,6 +853,9 @@ footer{
     .my-prof-img{
         order: 1;
     }
+    body{
+        overflow-x: hidden;
+    }
 
 }
 
@@ -898,7 +901,4 @@ footer{
         font-size: 10px;
     }
     
-}
-body{
-    overflow-x: hidden;
 }
