@@ -1,0 +1,900 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    min-height: 8vh;
+}
+
+a:hover{
+    color: #55198B;
+}
+
+.nav-links{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 20px;
+    color: rgb(117, 117, 117);
+}
+nav a{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+nav h1{
+    font-size: 30px;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+    
+}
+.burger div{
+    background-color: slateblue;
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+    transition: .5s ease-out;
+    border-radius: 20%;
+}
+
+.burger .dtwo{
+    width: 20px;
+    transform: translateX(10px);
+}
+
+#topbtn{
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #55198B;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+}
+#topbtn:hover{
+    background-color: transparent;
+    color: #333;
+}
+
+/* Main Css Start */
+.secone{
+    margin-top: 30px;
+    min-height: 80vh;
+}
+
+.intro{
+    height: 500px;
+    display: flex;
+    padding: 30px;
+}
+
+.content{
+    margin-top: 100px;
+    width: 99%;
+    text-align: left;
+}
+
+
+.content h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+}
+
+.content p{
+    margin-top: 30px;
+    font-size: 25px;
+    line-height: 35px;
+    color: rgb(128, 128, 128);
+}
+
+.links{
+    margin-top: 20px;
+    font-size: 25px;
+    word-spacing: 15px;
+}
+.firstlinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links .fab{
+    padding: 10px;
+    border-radius: 50%;
+    color: #efe;
+    cursor: pointer;
+}
+.probtn a:hover{
+    background-color: transparent;
+    color: #333;
+}
+
+.fa-github{
+    background-color: #333;
+}
+.fa-linkedin-in{
+    background-color: #0000EE;
+}
+.fa-facebook-f{
+    background-color: #3B5998;
+}
+.fa-google{
+    background-color: #EA4335;
+}
+
+.fa-html5{
+    background-color: coral;
+}
+.fa-css3-alt{
+    background-color: #1A0DAB;
+}
+.links .fa-js{
+    background-color: rgb(255, 255, 160);
+    color: #333;
+}
+
+.fa-node{
+    background-color: rgb(129, 201, 129);
+}
+.links .fa-python{color: #333;background-color: lightgray;}
+.links .fa-cuttlefish{color: blue;background-color: lightgray;}
+.links .fa-sass{color: pink;background-color: rgb(70, 70, 70);}
+.fa-star{
+    color: gold;
+}
+.whatdo .fab:hover{
+    background-color: transparent;
+    color: slateblue;
+}
+
+.my-contact-links{
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.my-contact-links a{
+    text-decoration: none;
+    color: #efe;
+    font-weight: 900;
+    background-color: #55198B;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 1px solid #55198B;
+    transition: 0.5s;
+}
+.my-contact-links a:hover{
+    color: #333;
+    background-color: transparent;
+}
+
+.my-img{
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.my-img img{
+    height: auto;
+    max-width: 100%;
+}
+
+.profe{
+    display: flex;
+}
+
+.img2{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+}
+.infome p{
+    font-size: 16px;
+    margin: 0;
+}
+
+.whatdo{
+    margin-bottom: 20px;
+}
+.secthree{
+    margin-top: 100px;
+}
+
+.graph{
+    padding: 20px;
+    /* background-color: lightgray; */
+}
+.graph h1{
+    font-size: 30px;
+}
+.skill p{
+    margin: 30px 0;
+    color: rgb(88, 88, 88);
+}
+.yoyo{
+    height: 20px;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+}
+.yoyo span{
+    border-radius: 10px;
+    height: 100%;
+    display: block;
+    background-color:  #AAA5FF;
+}
+.yoyo1 span{
+    width: 90%;
+}
+.yoyo2 span{
+    width: 30%;
+}
+.yoyo3 span{
+    width: 60%;
+}
+
+.secfour{
+    margin-top: 100px;
+}
+
+
+/* secfour */
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+.myprojects{
+    padding: 10px;
+}
+.h1h{
+    text-align: center;
+    color: rgb(39, 39, 39);
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.prosame{
+    padding: 20px;
+    background-color:#fff;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.prosame:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px; 
+}
+.prosame h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+.prosame span{
+    margin-right: 10px;
+}
+.prosize{
+    margin: auto auto auto 40px;
+    font-size: 14px;
+}
+.yamla{
+    width: 90%;
+    padding: 5px;
+    height: 50px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    margin: auto;
+    overflow: hidden;
+}
+.repoinfo{
+    display: flex;
+    width: 90%;
+    margin: 25px auto auto auto;
+    justify-content: space-between;
+}
+.repoinfo p,.project-container p{
+    color: rgb(112, 112, 112);
+}
+.repoinfo span{
+    margin: 0 5px 0 15px;
+}
+.langcolor{
+    height: 10px;
+    width: 10px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-right: 7px;
+}
+
+.repostar{
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+    overflow: hidden;
+}
+.probtn{
+    text-align: center;
+    margin: 40px 0;
+    
+}
+.probtn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #55198B;
+    font-weight: 700;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: all ease 0.5s;
+    border: 1px solid #55198B;
+}
+.repo1{
+    display: flex;
+    font-size: 13px;
+}
+
+/* Sec Five */
+
+.contact-two{
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    width: 70%;
+    margin-top: 50px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.head{
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    
+}
+
+
+.my-prof-img{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.my-prof-img{
+    height: auto;
+    width: auto;
+    text-align: center;
+    margin: 20px 0 auto auto;
+
+    
+}
+.my-prof-img img{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    border: 5px solid #55198B;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+}
+.head{
+    text-align: left;
+    color: rgb(100, 100, 100);
+}
+.head h1{
+    transform: translateY(50px);
+}
+.para{
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(110, 110, 110);
+}
+.para p{
+    margin-bottom: 20px;
+}
+.p2{
+    color: rgb(20, 20, 20);
+    font-weight: 700;
+    text-align: left;
+}
+.address{
+    text-align: left;
+    padding: 10px;
+    font-size: 19px;
+}
+.lastlinks{
+    margin-bottom:30px ;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.lastlinks i{
+    padding: 30px;
+    font-size: 25px;
+}
+
+.secfive{
+    margin-top: 100px;
+}
+
+
+footer{
+    margin: 30px 0 10px 0;
+    text-align: center;
+
+}
+.fa-heart{
+    color: #EA4335;
+}
+
+
+@media screen and (max-width: 845px) and (min-width: 768px){
+    .my-img{
+        width: 40%;
+    }
+    .my-contact-links{
+        width: 70%;
+    }
+}
+
+
+
+ @media screen and (max-width: 1000px) and (min-width: 846px){
+    .my-img{
+        width: 20%;
+    }
+    .my-contact-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1120px) and (min-width:1000px){
+    .my-contact-links{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 924px){
+    .project-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .prosame{
+        width: 41%;
+        margin: 20px 10px;
+    }
+}
+
+
+
+/* Nav Start */
+@media screen and (max-width:768px){
+    
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+        top: 9vh;
+        width: 100%;
+        left: 0;
+        align-items: center;
+        background-color: #e2e2e2;
+        animation: navani 1s  1 forwards ;
+        overflow: hidden;
+        display: none;
+    }
+    .nav-links a{
+        color: slateblue;
+    }
+    
+    .active{
+        display: flex;
+    }
+    @keyframes navani {
+        from{
+            height: 0;
+        }
+        to{
+            height: 200px;
+        }
+    }
+    .nav-links li:hover{
+        background-color: lightgray;
+    }
+
+    .nav-links li{
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    
+    }
+
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .burger{
+        display: block;
+        
+    }
+
+    .burger-active .done{
+        transform: rotate(-45deg) translateY(10px);
+        
+    }
+    .burger-active .dtwo{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    .burger-active .dthree{
+        transform: rotate(45deg) translateY(-10px);
+    }
+
+    
+}
+
+/* Nav End */
+
+/* Main Start */
+
+@media screen and (max-width:768px){
+    .secone{
+        margin: 0;
+    }
+    .intro{
+        height: 500px;
+        display: block;
+        padding: 20px;
+    }
+    
+    .content{
+    
+        width: 99%;
+        text-align: center;
+    }
+    
+    .content h1{
+        font-size: 30px;
+        color: black;
+    }
+    
+    .content p{
+        margin-top: 30px;
+        font-size: 20px;
+        color: rgb(128, 128, 128);
+    }
+    
+    .links{
+        margin: 20px auto auto auto;
+        font-size: 20px;
+        word-spacing: 15px;
+        width: 70%;
+    }
+    .whatdo i{
+        margin: 5px;
+    }
+    .whatdo{
+        width: 90%;
+    }
+
+    .links .fab,.whatdo .fab{
+        padding: 10px;
+        border-radius: 50%;
+        color: #efe;
+    
+    }
+    .links .fa-js{
+        background-color: rgb(255, 255, 160);
+        color: #333;
+    }
+    
+    .fa-node{
+        background-color: rgb(129, 201, 129);
+    }
+    .links .fa-python{color: #333;background-color: lightgray;}
+    .links .fa-cuttlefish{color: blue;background-color: lightgray;}
+    .links .fa-sass{color: pink;background-color: rgb(70, 70, 70);}
+    
+    .my-contact-links{
+        margin-top: 20px;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        margin: 40px auto auto auto;
+    }
+    
+    .my-contact-links a{
+        text-decoration: none;
+        color: #efe;
+        font-weight: 900;
+        background-color: #55198B;
+        padding: 10px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        border: 1px solid #55198B;
+        transition: 0.5s;
+    }
+    .my-contact-links a:hover,.probtn a:hover{
+        color: #333;
+        background-color: transparent;
+        
+    }
+    
+    .my-img{
+        text-align: center;
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .my-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .img2{
+        order: 1;
+        padding-top: 0;
+        margin: 0;
+        text-align: center;
+        width: 90%;
+    }
+    .content2{
+        order: 0;
+        
+    }
+    
+    .profe{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectwo{
+        margin-top: 250px;
+    }
+    .infome{
+        text-align: left;
+        padding: 20px;
+
+    }
+    .infome p span{
+        margin-right: 5px;
+    }
+    .skill p{
+        margin: 10px 0;
+    }
+    .project-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .myprojects{
+        padding: 10px;
+        /* background-color: lightgray; */
+    }
+    .h1h{
+        text-align: center;
+        color: rgb(39, 39, 39);
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .prosame{
+        padding: 20px;
+        background-color:#fff;
+        margin-top: 30px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .prosame:hover{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px; 
+    }
+    .prosame h1{
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .prosame span{
+        margin-right: 10px;
+    }
+    .prosize{
+
+        font-size: 14px;
+    }
+    .yamla{
+        width: 90%;
+        padding: 5px;
+        height: 50px;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        margin: auto;
+        overflow: hidden;
+    }
+    .repoinfo{
+        display: flex;
+        width: 100%;
+        margin: 25px auto auto auto;
+        justify-content: space-between;
+    }
+    .repo1{
+        display: flex;
+    }
+    .repoinfo p,.project-container p{
+        color: rgb(112, 112, 112);
+    }
+    .repoinfo span{
+        margin: 0 5px 0 15px;
+    }
+    .langcolor{
+        height: 10px;
+        width: 10px;
+        background-color: yellow;
+        border-radius: 50%;
+        margin-top: 3px;
+        margin-right: 7px;
+    }
+    
+    .repostar{
+        color: rgb(85, 85, 85);
+        font-size: 12px;
+        overflow: hidden;
+    }
+    .probtn{
+        text-align: center;
+        margin: 40px 0;
+        
+    }
+    .probtn a{
+        text-decoration: none;
+        color: #fff;
+        background-color: #55198B;
+        font-weight: 700;
+        padding: 15px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        transition: all ease 0.5s;
+        border: 1px solid #55198B;
+    }
+    .secfive{
+        margin-top: 100px;
+    }
+    .my-prof-img{
+        height: auto;
+        width: auto;
+        text-align: center;
+        margin: 20px  0;
+        
+        
+    }
+    .my-prof-img img{
+        /* height: 50%; */
+        max-width: 250px;
+        max-height: 250px;
+        border-radius: 50%;
+        border: 5px solid #55198B;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
+    }
+    .head{
+        text-align: center;
+        color: rgb(100, 100, 100);
+    }
+    .para{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 10px;
+        color: rgb(110, 110, 110);
+        width: 100%;
+    }
+    .para p{
+        margin-bottom: 20px;
+        
+    }
+    .p2{
+        color: rgb(20, 20, 20);
+        font-weight: 700;
+        text-align: center;
+        font-size: 16px;
+    }
+    .address{
+        text-align: center;
+        padding: 20px;
+    }
+    .lastlinks{
+        margin-bottom:30px ;
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+    .lastlinks i{
+        padding: 30px;
+        font-size: 25px;
+    }
+    .contact-two{
+        flex-direction: column;
+        width: 90%;
+    }
+    .wrapper{
+        display: block;
+
+    }
+    .contact-two{
+        order: 2;
+        margin: auto;
+    }
+    .head h1{
+        transform: translateY(0);
+    }
+    .my-prof-img{
+        order: 1;
+    }
+
+}
+
+/* Main End */
+
+
+@media screen and (max-width:430px){
+    .my-contact-links{
+        width: 99%;
+        font-size: 13px;
+    }
+    .content p{
+        font-size: 15px;
+    }
+    .content{
+        padding: 0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 768px) and (min-width: 500px){
+    .sectwo{
+        margin-top: 400px;
+    }
+}
+
+/* only for projects */
+@media screen and (max-width: 767px) and (min-width: 700px){
+    .project-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .prosame{
+        width: 41%;
+        
+    }
+    .prosize{
+        font-size: 10px;
+    }
+    
+}
