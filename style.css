@@ -45,6 +45,19 @@ nav h1{
 nav h1 a{
     color: #55198B;
 }
+
+.nav-links li a::after{
+    content: "";
+    display: block;
+    transition: 0.5s;
+    height: 15%;
+    width: 0%;
+    background-color: #55198B;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+
 .burger{
     display: none;
     cursor: pointer;
@@ -545,6 +558,9 @@ footer{
     }
     .nav-links a{
         color: slateblue;
+    }
+    .nav-links li a:hover::after{
+        width: 0;
     }
     
     .active{
