@@ -1,6 +1,6 @@
 # My Portfolio
 
-> Inofrmation about my skills.
+> My Portfolio Information About My Skills What I Do...
 
 
 
