@@ -8,18 +8,21 @@ const projectFour = document.querySelector('.project4');
 const projectFive = document.querySelector('.project5');
 const projectSix = document.querySelector('.project6');
 
-burger.addEventListener('click',()=>{navLinks.classList.toggle('active');burger.classList.toggle('burger-active')});
-topBtn.addEventListener('click',topFunction);
-window.onscroll = ()=>(document.body.scrollTo >20 || document.documentElement.scrollTop > 20)?topBtn.style.display="block":topBtn.style.display="none";
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  burger.classList.toggle('burger-active')
+});
+topBtn.addEventListener('click', topFunction);
+window.onscroll = () => (document.body.scrollTo > 20 || document.documentElement.scrollTop > 20) ? topBtn.style.display = "block" : topBtn.style.display = "none";
 
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
-projectOne.addEventListener('click',()=>window.open("https://github.com/PrasadBroo/PrasadBroo.github.io",'_blank'));
-projectTwo.addEventListener('click',()=>window.open("https://github.com/PrasadBroo/Tic-Tac-Toe",'_blank'));
-projectThree.addEventListener('click',()=>window.open("https://github.com/PrasadBroo/memory_game",'_blank'));
-projectFour.addEventListener('click',()=>window.open("https://github.com/PrasadBroo/analog_clock",'_blank'));
-projectFive.addEventListener('click',()=>window.open("https://github.com/PrasadBroo/Chrome_Clone",'_blank'));
-projectSix.addEventListener('click',()=>window.open("https://github.com/PrasadBroo/Blood_Group_Calculator",'_blank'));
+projectOne.addEventListener('click', () => window.open("https://github.com/PrasadBroo/PrasadBroo.github.io", '_blank'));
+projectTwo.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Realtime-Chat", '_blank'));
+projectThree.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Sololearn-Api", '_blank'));
+projectFour.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Link-Shortner-Website", '_blank'));
+projectFive.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Firebase-Chat", '_blank'));
+projectSix.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Bookmark-Application", '_blank'));

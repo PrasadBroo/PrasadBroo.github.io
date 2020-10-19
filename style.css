@@ -1,19 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     box-sizing: border-box;
-    
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-nav{
+nav {
     background-color: #fff;
     display: flex;
     justify-content: space-around;
@@ -22,11 +22,11 @@ nav{
     min-height: 8vh;
 }
 
-a:hover{
+a:hover {
     color: #55198B;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     width: 40%;
     justify-content: space-around;
@@ -34,19 +34,22 @@ a:hover{
     font-size: 20px;
     color: rgb(117, 117, 117);
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: rgb(68, 68, 68);
 }
-nav h1{
+
+nav h1 {
     font-size: 30px;
-    
+
 }
-nav h1 a{
+
+nav h1 a {
     color: #55198B;
 }
 
-.nav-links li a::after{
+.nav-links li a::after {
     content: "";
     display: block;
     transition: 0.5s;
@@ -54,16 +57,18 @@ nav h1 a{
     width: 0%;
     background-color: #55198B;
 }
-.nav-links li a:hover::after{
+
+.nav-links li a:hover::after {
     width: 100%;
 }
 
-.burger{
+.burger {
     display: none;
     cursor: pointer;
-    
+
 }
-.burger div{
+
+.burger div {
     background-color: slateblue;
     height: 3px;
     width: 30px;
@@ -72,12 +77,12 @@ nav h1 a{
     border-radius: 20%;
 }
 
-.burger .dtwo{
+.burger .dtwo {
     width: 20px;
     transform: translateX(10px);
 }
 
-#topbtn{
+#topbtn {
     position: fixed;
     right: 20px;
     bottom: 30px;
@@ -89,21 +94,23 @@ nav h1 a{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.5 ease;
+    display: none;
+    transition: all 0.5s ease;
 }
-#topbtn:hover{
-    background-color: transparent;
-    color: #333;
+
+#topbtn:hover {
+    background-color: #842bd1;
+    color: #fff;
 }
 
 /* Main Css Start */
 
-.allinone{
-    margin: 0 5px ;
+.allinone {
+    margin: 0 5px;
     padding: 0 5px;
 }
 
-.secone{
+.secone {
     margin-top: 30px;
     height: auto;
     animation-name: secone-ani;
@@ -111,98 +118,125 @@ nav h1 a{
     animation-iteration-count: 1;
 }
 
-.intro{
+.intro {
     height: 500px;
     display: flex;
     padding: 30px;
 }
 
-.content{
+.content {
     margin-top: 100px;
     width: 99%;
     text-align: left;
 }
 
 
-.content h1{
+.content h1 {
     font-size: 60px;
     font-weight: 900;
     color: black;
 }
 
-.content p{
+.content p {
     margin-top: 30px;
     font-size: 25px;
     line-height: 35px;
     color: rgb(128, 128, 128);
 }
 
-.links{
+.links {
     margin-top: 20px;
     font-size: 25px;
     word-spacing: 15px;
 }
-.firstlinks{
+
+.firstlinks {
     width: 50%;
     display: flex;
     justify-content: space-between;
 }
-.firstlinks .fab:hover,.lastlinks .fab:hover{
+
+.firstlinks .fab:hover,
+.lastlinks .fab:hover {
     background-color: #333;
     transition: 0.5s ease;
 }
 
-.links .fab{
+.links .fab {
     padding: 10px;
     border-radius: 50%;
     color: #efe;
     cursor: pointer;
 }
-.probtn a:hover{
+
+.links .fa-react {
+    background-color: #333;
+}
+
+.probtn a:hover {
     background-color: transparent;
     color: #333;
 }
 
-.fa-github{
+.fa-github {
     background-color: #333;
 }
-.fa-instagram{
-    background-color:#c13584;
+
+.fa-instagram {
+    background-color: #c13584;
 }
-.fa-facebook{
+
+.fa-facebook {
     background-color: #3B5998;
     text-align: center;
 }
-.fa-google{
+
+.fa-google {
     background-color: #EA4335;
 }
 
-.fa-html5{
+.fa-html5 {
     background-color: coral;
 }
-.fa-css3-alt{
+
+.fa-css3-alt {
     background-color: #1A0DAB;
 }
-.links .fa-js{
+
+.links .fa-js {
     background-color: rgb(255, 255, 160);
     color: #333;
 }
 
-.fa-node{
+.fa-node {
     background-color: rgb(129, 201, 129);
 }
-.links .fa-python{color: #333;background-color: lightgray;}
-.links .fa-cuttlefish{color: blue;background-color: lightgray;}
-.links .fa-sass{color: pink;background-color: rgb(70, 70, 70);}
-.fa-star{
+
+.links .fa-python {
+    color: #333;
+    background-color: lightgray;
+}
+
+.links .fa-cuttlefish {
+    color: blue;
+    background-color: lightgray;
+}
+
+.links .fa-sass {
+    color: pink;
+    background-color: rgb(70, 70, 70);
+}
+
+.fa-star {
     color: gold;
 }
-.whatdo .fab:hover{
+
+.whatdo .fab:hover {
     background-color: transparent;
     color: slateblue;
 }
 
-.my-contact-links{
+.my-contact-links {
     margin-top: 30px;
     width: 50%;
     display: flex;
@@ -210,7 +244,7 @@ nav h1 a{
 }
 
 
-.my-contact-links a{
+.my-contact-links a {
     text-decoration: none;
     color: #efe;
     font-weight: 900;
@@ -221,119 +255,137 @@ nav h1 a{
     border: 1px solid #55198B;
     transition: 0.5s;
 }
-.my-contact-links a:hover{
+
+.my-contact-links a:hover {
     color: #333;
     background-color: transparent;
 }
 
-.my-img{
+.my-img {
     text-align: center;
     padding: 20px;
     max-width: 100%;
     height: auto;
 }
 
-.my-img img{
+.my-img img {
     height: auto;
     width: 100%;
 }
 
-.profe{
+.profe {
     display: flex;
 }
 
-.img2{
+.img2 {
     margin-top: 100px;
     height: 100%;
     width: 100%;
 }
-.infome p{
+
+.infome p {
     font-size: 16px;
     margin: 0;
 }
 
-.whatdo{
+.whatdo {
     margin-bottom: 20px;
 }
-.secthree{
+
+.secthree {
     margin-top: 100px;
 }
 
-.graph{
+.graph {
     padding: 20px;
-    
+
 }
-.graph h1{
+
+.graph h1 {
     font-size: 30px;
 }
-.skill p{
+
+.skill p {
     margin: 30px 0;
     color: rgb(88, 88, 88);
 }
-.yoyo{
+
+.yoyo {
     height: 20px;
     width: 100%;
     background-color: rgb(236, 236, 236);
     border-radius: 10px;
 }
-.yoyo span{
+
+.yoyo span {
     border-radius: 10px;
     height: 100%;
     display: block;
-    background-color:  #AAA5FF;
+    background-color: #AAA5FF;
 }
-.yoyo1 span{
+
+.yoyo1 span {
     width: 60%;
 }
-.yoyo2 span{
-    width: 10%;
-}
-.yoyo3 span{
+
+.yoyo2 span {
     width: 40%;
 }
 
-.secfour{
+.yoyo3 span {
+    width: 80%;
+}
+
+.secfour {
     margin-top: 100px;
 }
 
 
 /* secfour */
-.project-container{
+.project-container {
     display: flex;
     flex-direction: column;
 }
-.myprojects{
+
+.myprojects {
     padding: 10px;
 }
-.h1h{
+
+.h1h {
     text-align: center;
     color: rgb(39, 39, 39);
     margin-bottom: 30px;
     font-size: 20px;
 }
-.prosame{
+
+.prosame {
     padding: 20px;
-    background-color:#fff;
+    background-color: #fff;
     margin-top: 30px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -10px;
     border-radius: 10px;
     cursor: pointer;
 }
-.prosame:hover{
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px; 
+
+.prosame:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
 }
-.prosame h1{
+
+.prosame h1 {
     margin-bottom: 20px;
     color: #333;
 }
-.prosame span{
+
+.prosame span {
     margin-right: 10px;
 }
-.prosize{
+
+.prosize {
     margin: auto auto auto 40px;
     font-size: 14px;
 }
-.yamla{
+
+.yamla {
     width: 90%;
     padding: 5px;
     height: 50px;
@@ -342,19 +394,24 @@ nav h1 a{
     margin: auto;
     overflow: hidden;
 }
-.repoinfo{
+
+.repoinfo {
     display: flex;
     width: 90%;
     margin: 25px auto auto auto;
     justify-content: space-between;
 }
-.repoinfo p,.project-container p{
+
+.repoinfo p,
+.project-container p {
     color: rgb(112, 112, 112);
 }
-.repoinfo span{
+
+.repoinfo span {
     margin: 0 5px 0 15px;
 }
-.langcolor{
+
+.langcolor {
     height: 10px;
     width: 10px;
     background-color: yellow;
@@ -363,18 +420,20 @@ nav h1 a{
     margin-right: 7px;
 }
 
-.repostar{
+.repostar {
     color: rgb(85, 85, 85);
     font-size: 12px;
     overflow: hidden;
 }
-.probtn{
+
+.probtn {
     text-align: center;
     margin: 40px 0;
     width: 100%;
     height: auto;
 }
-.probtn a{
+
+.probtn a {
     text-decoration: none;
     color: #fff;
     background-color: #55198B;
@@ -385,34 +444,37 @@ nav h1 a{
     transition: all ease 0.5s;
     border: 1px solid #55198B;
 }
-.repo1{
+
+.repo1 {
     display: flex;
     font-size: 13px;
 }
 
 /* Sec Five */
 
-.contact-two{
+.contact-two {
     display: flex;
     flex-direction: column;
     order: 1;
     width: 70%;
     margin-top: 50px;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     justify-content: space-between;
     padding: 0 50px;
 }
-.head{
+
+.head {
     font-size: 20px;
     margin: 0;
     padding: 50px;
-    
+
 }
 
 
-.my-prof-img{
+.my-prof-img {
     display: flex;
     flex-direction: column;
     order: 2;
@@ -422,118 +484,132 @@ nav h1 a{
     margin-right: 10px;
 }
 
-.my-prof-img{
+.my-prof-img {
     height: auto;
     width: auto;
     text-align: center;
     margin: 20px 0 auto auto;
 
-    
+
 }
-.my-prof-img img{
+
+.my-prof-img img {
     max-width: 250px;
     max-height: 250px;
     border-radius: 50%;
     border: 5px solid #55198B;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
 }
-.head{
+
+.head {
     text-align: left;
     color: rgb(100, 100, 100);
 }
-.head h1{
+
+.head h1 {
     transform: translateY(80px);
     font-size: 30px;
     padding-left: 10px;
 }
-.para{
+
+.para {
     text-transform: uppercase;
     text-align: left;
     font-size: 20px;
     padding: 10px;
     color: rgb(110, 110, 110);
 }
-.para p{
+
+.para p {
     margin-bottom: 20px;
 }
-.p2{
+
+.p2 {
     color: rgb(20, 20, 20);
     font-weight: 700;
     text-align: left;
 }
-.address{
+
+.address {
     text-align: left;
     padding: 10px;
     font-size: 19px;
 }
-.lastlinks{
-    margin-bottom:30px ;
+
+.lastlinks {
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
-.lastlinks i{
+
+.lastlinks i {
     padding: 30px;
     font-size: 25px;
 }
 
-.secfive{
+.secfive {
     margin-top: 100px;
 }
 
 
-footer{
+footer {
     margin: 30px 0 10px 0;
     text-align: center;
 
 }
-.fa-heart{
+
+.fa-heart {
     color: #EA4335;
 }
 
-@keyframes secone-ani{
-    from{
+@keyframes secone-ani {
+    from {
         transform: translateY(20%);
     }
-    to{
+
+    to {
         transform: translateY(0);
     }
 }
 
 
-@media screen and (max-width: 845px) and (min-width: 767px){
-    .my-img{
+@media screen and (max-width: 845px) and (min-width: 767px) {
+    .my-img {
         width: 40%;
     }
-    .my-contact-links{
+
+    .my-contact-links {
         width: 70%;
     }
 }
 
 
 
- @media screen and (max-width: 1000px) and (min-width: 846px){
-    .my-img{
+@media screen and (max-width: 1000px) and (min-width: 846px) {
+    .my-img {
         width: 20%;
     }
-    .my-contact-links{
+
+    .my-contact-links {
         width: 60%;
     }
 }
 
-@media screen and (max-width:1120px) and (min-width:1000px){
-    .my-contact-links{
+@media screen and (max-width:1120px) and (min-width:1000px) {
+    .my-contact-links {
         width: 90%;
     }
 }
 
-@media screen and (min-width: 924px){
-    .project-container{
+@media screen and (min-width: 924px) {
+    .project-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .prosame{
+
+    .prosame {
         width: 41%;
         margin: 20px 10px;
     }
@@ -542,9 +618,9 @@ footer{
 
 
 /* Nav Start */
-@media screen and (max-width:768px){
-    
-    .nav-links{
+@media screen and (max-width:768px) {
+
+    .nav-links {
         position: absolute;
         flex-direction: column;
         top: 9vh;
@@ -552,37 +628,42 @@ footer{
         left: 0;
         align-items: center;
         background-color: #e2e2e2;
-        animation: navani 1s  1 forwards ;
+        animation: navani 1s 1 forwards;
         overflow: hidden;
         display: none;
     }
-    .nav-links a{
+
+    .nav-links a {
         color: slateblue;
     }
-    .nav-links li a:hover::after{
+
+    .nav-links li a:hover::after {
         width: 0;
     }
-    
-    .active{
+
+    .active {
         display: flex;
     }
+
     @keyframes navani {
-        from{
+        from {
             height: 0;
         }
-        to{
+
+        to {
             height: 200px;
         }
     }
-    .nav-links li:hover{
+
+    .nav-links li:hover {
         background-color: lightgray;
     }
 
-    .nav-links li{
+    .nav-links li {
         padding: 10px 0;
         width: 100%;
         text-align: center;
-    
+
     }
 
 
@@ -590,97 +671,116 @@ footer{
         justify-content: space-between;
     }
 
-    .burger{
+    .burger {
         display: block;
-        
+
     }
 
-    .burger-active .done{
+    .burger-active .done {
         transform: rotate(-45deg) translateY(10px);
-        
+
     }
-    .burger-active .dtwo{
+
+    .burger-active .dtwo {
         transform: translateX(-20px);
         opacity: 0;
     }
-    .burger-active .dthree{
+
+    .burger-active .dthree {
         transform: rotate(45deg) translateY(-10px);
     }
 
-    
+
 }
 
 /* Nav End */
 
 /* Main Start */
 
-@media screen and (max-width:767px){
-    .secone{
+@media screen and (max-width:767px) {
+    .secone {
         margin: 0;
     }
-    .intro{
+
+    .intro {
         height: 500px;
         display: block;
         padding: 20px;
     }
-    
-    .content{
-    
+
+    .content {
+
         width: 99%;
         text-align: center;
     }
-    
-    .content h1{
+
+    .content h1 {
         font-size: 30px;
         color: black;
     }
-    
-    .content p{
+
+    .content p {
         margin-top: 30px;
         font-size: 20px;
         color: rgb(128, 128, 128);
     }
-    
-    .links{
+
+    .links {
         margin: 20px auto auto auto;
         font-size: 20px;
         word-spacing: 15px;
         width: 70%;
     }
-    .whatdo i{
+
+    .whatdo i {
         margin: 5px;
     }
-    .whatdo{
+
+    .whatdo {
         width: 90%;
     }
 
-    .links .fab,.whatdo .fab{
+    .links .fab,
+    .whatdo .fab {
         padding: 10px;
         border-radius: 50%;
         color: #efe;
-    
+
     }
-    .links .fa-js{
+
+    .links .fa-js {
         background-color: rgb(255, 255, 160);
         color: #333;
     }
-    
-    .fa-node{
+
+    .fa-node {
         background-color: rgb(129, 201, 129);
     }
-    .links .fa-python{color: #333;background-color: lightgray;}
-    .links .fa-cuttlefish{color: blue;background-color: lightgray;}
-    .links .fa-sass{color: pink;background-color: rgb(70, 70, 70);}
-    
-    .my-contact-links{
+
+    .links .fa-python {
+        color: #333;
+        background-color: lightgray;
+    }
+
+    .links .fa-cuttlefish {
+        color: blue;
+        background-color: lightgray;
+    }
+
+    .links .fa-sass {
+        color: pink;
+        background-color: rgb(70, 70, 70);
+    }
+
+    .my-contact-links {
         margin-top: 20px;
         width: 70%;
         display: flex;
         justify-content: space-around;
         margin: 40px auto auto auto;
     }
-    
-    .my-contact-links a{
+
+    .my-contact-links a {
         text-decoration: none;
         color: #efe;
         font-weight: 900;
@@ -691,89 +791,106 @@ footer{
         border: 1px solid #55198B;
         transition: 0.5s;
     }
-    .my-contact-links a:hover,.probtn a:hover{
+
+    .my-contact-links a:hover,
+    .probtn a:hover {
         color: #333;
         background-color: transparent;
-        
+
     }
-    
-    .my-img{
+
+    .my-img {
         text-align: center;
         padding: 20px;
         max-width: 100%;
     }
-    
-    .my-img img{
+
+    .my-img img {
         height: 100%;
         width: 100%;
     }
-    .img2{
+
+    .img2 {
         order: 1;
         padding-top: 0;
         margin: 0;
         text-align: center;
         width: 90%;
     }
-    .content2{
+
+    .content2 {
         order: 0;
-        
+
     }
-    
-    .profe{
+
+    .profe {
         display: flex;
         flex-direction: column;
     }
-    .sectwo{
+
+    .sectwo {
         margin-top: 250px;
     }
-    .infome{
+
+    .infome {
         text-align: left;
         padding: 20px;
 
     }
-    .infome p span{
+
+    .infome p span {
         margin-right: 5px;
     }
-    .skill p{
+
+    .skill p {
         margin: 10px 0;
     }
-    .project-container{
+
+    .project-container {
         display: flex;
         flex-direction: column;
     }
-    .myprojects{
+
+    .myprojects {
         padding: 10px;
         /* background-color: lightgray; */
     }
-    .h1h{
+
+    .h1h {
         text-align: center;
         color: rgb(39, 39, 39);
         margin-bottom: 30px;
         font-size: 20px;
     }
-    .prosame{
+
+    .prosame {
         padding: 20px;
-        background-color:#fff;
+        background-color: #fff;
         margin-top: 30px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px -10px;
         border-radius: 10px;
         cursor: pointer;
     }
-    .prosame:hover{
-        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px; 
+
+    .prosame:hover {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
     }
-    .prosame h1{
+
+    .prosame h1 {
         margin-bottom: 20px;
         color: #333;
     }
-    .prosame span{
+
+    .prosame span {
         margin-right: 10px;
     }
-    .prosize{
+
+    .prosize {
 
         font-size: 14px;
     }
-    .yamla{
+
+    .yamla {
         width: 90%;
         padding: 5px;
         height: 50px;
@@ -782,22 +899,28 @@ footer{
         margin: auto;
         overflow: hidden;
     }
-    .repoinfo{
+
+    .repoinfo {
         display: flex;
         width: 100%;
         margin: 25px auto auto auto;
         justify-content: space-between;
     }
-    .repo1{
+
+    .repo1 {
         display: flex;
     }
-    .repoinfo p,.project-container p{
+
+    .repoinfo p,
+    .project-container p {
         color: rgb(112, 112, 112);
     }
-    .repoinfo span{
+
+    .repoinfo span {
         margin: 0 5px 0 15px;
     }
-    .langcolor{
+
+    .langcolor {
         height: 10px;
         width: 10px;
         background-color: yellow;
@@ -805,18 +928,20 @@ footer{
         margin-top: 3px;
         margin-right: 7px;
     }
-    
-    .repostar{
+
+    .repostar {
         color: rgb(85, 85, 85);
         font-size: 12px;
         overflow: hidden;
     }
-    .probtn{
+
+    .probtn {
         text-align: center;
         margin: 40px 0;
-        
+
     }
-    .probtn a{
+
+    .probtn a {
         text-decoration: none;
         color: #fff;
         background-color: #55198B;
@@ -827,16 +952,19 @@ footer{
         transition: all ease 0.5s;
         border: 1px solid #55198B;
     }
-    .secfive{
+
+    .secfive {
         margin-top: 100px;
     }
-    .my-prof-img{
+
+    .my-prof-img {
         height: auto;
         width: auto;
         text-align: center;
-        margin: 20px  10px;
+        margin: 20px 10px;
     }
-    .my-prof-img img{
+
+    .my-prof-img img {
         /* height: 50%; */
         max-width: 250px;
         max-height: 250px;
@@ -844,111 +972,131 @@ footer{
         border: 5px solid #55198B;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px -10px;
     }
-    .head{
+
+    .head {
         text-align: center;
         color: rgb(100, 100, 100);
     }
-    .para{
+
+    .para {
         text-transform: uppercase;
         text-align: center;
         padding: 0px;
         color: rgb(110, 110, 110);
         width: 100%;
     }
-    .para p{
+
+    .para p {
         margin-bottom: 20px;
     }
-    .p1,.p2{
+
+    .p1,
+    .p2 {
         word-break: break-all;
     }
-    .p2{
+
+    .p2 {
         color: rgb(20, 20, 20);
         font-weight: 700;
         text-align: center;
         font-size: 15px;
     }
-    .address{
+
+    .address {
         text-align: center;
         padding: 20px;
     }
-    .lastlinks{
-        margin-bottom:30px ;
+
+    .lastlinks {
+        margin-bottom: 30px;
         display: flex;
         justify-content: space-around;
         width: 60%;
     }
-    .lastlinks i{
+
+    .lastlinks i {
         padding: 30px;
         font-size: 25px;
     }
-    .contact-two{
+
+    .contact-two {
         flex-direction: column;
         width: 99%;
     }
-    .wrapper{
+
+    .wrapper {
         display: block;
         padding: 0;
     }
-    .contact-two{
+
+    .contact-two {
         order: 2;
         margin: auto;
     }
-    .head h1{
+
+    .head h1 {
         transform: translateY(0);
         font-size: 25px;
         color: black;
     }
-    .my-prof-img{
+
+    .my-prof-img {
         order: 1;
     }
-    
+
 
 }
 
 /* Main End */
 
 
-@media screen and (max-width:430px){
-    .my-contact-links{
+@media screen and (max-width:430px) {
+    .my-contact-links {
         width: 99%;
         font-size: 13px;
     }
-    .content p{
+
+    .content p {
         font-size: 15px;
     }
-    .content{
+
+    .content {
         padding: 0;
     }
-    body{
+
+    body {
         overflow-x: hidden;
     }
-    .lastlinks{
+
+    .lastlinks {
         width: 80%;
     }
-    
+
 }
 
-@media screen and (max-width: 805px) and (min-width: 500px){
-    .sectwo{
+@media screen and (max-width: 805px) and (min-width: 500px) {
+    .sectwo {
         margin-top: 300px;
     }
 }
 
 
 /* only for projects */
-@media screen and (max-width: 768px) and (min-width: 700px){
-    .project-container{
+@media screen and (max-width: 768px) and (min-width: 700px) {
+    .project-container {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
     }
-    .prosame{
+
+    .prosame {
         width: 41%;
-        
+
     }
-    .prosize{
+
+    .prosize {
         font-size: 10px;
     }
-    
+
 }
