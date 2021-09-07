@@ -21,7 +21,7 @@ function topFunction() {
 }
 
 projectOne.addEventListener('click', () => window.open("https://github.com/PrasadBroo/PrasadBroo.github.io", '_blank'));
-projectTwo.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Realtime-Chat", '_blank'));
+projectTwo.addEventListener('click', () => window.open("https://github.com/PrasadBroo/instagram-clone", '_blank'));
 projectThree.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Sololearn-Api", '_blank'));
 projectFour.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Link-Shortner-Website", '_blank'));
 projectFive.addEventListener('click', () => window.open("https://github.com/PrasadBroo/Firebase-Chat", '_blank'));
