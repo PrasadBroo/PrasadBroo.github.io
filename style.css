@@ -323,7 +323,12 @@ nav h1 a {
     display: block;
     background-color: #AAA5FF;
 }
-
+.h2{
+    font-size: 1.5rem;
+}
+.whatido{
+    font-size: 2rem;
+}
 .yoyo1 span {
     width: 60%;
 }
@@ -469,7 +474,7 @@ nav h1 a {
 .head {
     font-size: 20px;
     margin: 0;
-    padding: 50px;
+    padding: 0 50px;
 
 }
 
