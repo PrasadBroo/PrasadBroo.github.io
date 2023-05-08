@@ -70,7 +70,7 @@ function App() {
                 <i className="fa-solid fa-envelope"></i>
               </SocialLink>
             </div>
-            <div className="btns mt-8 lg:w-2/5 flex items-center justify-between">
+            <div className="btns mt-8 lg:w-1/2 flex items-center justify-between">
               <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl">
                 Contact Me
               </button>
@@ -182,7 +182,7 @@ function App() {
             Open source projects
           </h2>
           <div className="projects  mt-6 ">
-            <div className="md:grid md:grid-cols-4 md:gap-4">
+            <div className="md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-4">
               <Project />
               <Project />
               <Project />
@@ -217,7 +217,7 @@ function App() {
             <span className=" text-2xl mt-2 block">
               Open for opportunities: Yes
             </span>
-            <div className=" social md:w-2/5 my-4  md:flex-row flex items-center justify-between">
+            <div className=" social md:w-1/2 my-4  md:flex-row flex items-center justify-between">
               <SocialLink href="https://github.com/PrasadBroo">
                 <i className="fa-brands fa-github"></i>
               </SocialLink>
