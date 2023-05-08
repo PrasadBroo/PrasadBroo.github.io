@@ -1,8 +1,14 @@
 import Navbar from "./components/Navbar";
 import manOTableImg from "./assets/images/manOnTable.52be3144.svg";
 import handImg from "./assets/images/hand.png";
-import codingImg from "./assets/images/coding-gif.gif";
-import teamCodingImg from "./assets/images/developer-team.svg";
+import codingImg from "./assets/images/coding.png";
+import buildingCodeImg from "./assets/images/building-code.png";
+import Project from "./components/Project";
+import prasadbroImg from "./assets/images/prasadbro.jpg";
+import Footer from "./components/Footer";
+import SocialLink from "./components/SocialLink";
+import IconSkill from "./components/IconSkill";
+import typescriptImg from "./assets/icons/icons8-typescript-48.png";
 
 function App() {
   return (
@@ -27,25 +33,48 @@ function App() {
               and staying up-to-date with the latest web development trends.
               <i className="fas fa-lightbulb text-yellow-500"></i>
             </p>
-            <div className="social-links flex items-center justify-between lg:w-2/5 mt-6">
-              <div className=" h-10 w-10 rounded-full bg-[#333] text-white text-2xl flex items-center justify-center">
+            <div className="social-links flex items-center justify-between lg:w-1/2 mt-6">
+              <SocialLink href="https://github.com/PrasadBroo">
                 <i className="fa-brands fa-github"></i>
-              </div>
-              <div className=" h-10 w-10 rounded-full bg-[#333] text-white text-2xl flex items-center justify-center">
-                <i className="fa-brands fa-github"></i>
-              </div>
-              <div className=" h-10 w-10 rounded-full bg-[#333] text-white text-2xl flex items-center justify-center">
-                <i className="fa-brands fa-github"></i>
-              </div>
-              <div className=" h-10 w-10 rounded-full bg-[#333] text-white text-2xl flex items-center justify-center">
-                <i className="fa-brands fa-github"></i>
-              </div>
+              </SocialLink>
+
+              <SocialLink
+                className=" bg-pink-600 "
+                href="https://www.instagram.com/prasad__bro/"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </SocialLink>
+              <SocialLink
+                className=" bg-blue-700 "
+                href="https://www.facebook.com/prasadshindebro"
+              >
+                <i className="fa-brands fa-facebook"></i>
+              </SocialLink>
+
+              <SocialLink
+                className=" bg-orange-400"
+                href="https://stackoverflow.com/users/12332711/prasadbro"
+              >
+                <i className="fa-brands fa-stack-overflow"></i>
+              </SocialLink>
+              <SocialLink
+                className=" bg-blue-700 "
+                href="https://www.linkedin.com/in/prasadbro/"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </SocialLink>
+              <SocialLink
+                className=" bg-red-500"
+                href="mailto:https://sketchware7@gmail.com"
+              >
+                <i className="fa-solid fa-envelope"></i>
+              </SocialLink>
             </div>
             <div className="btns mt-8 lg:w-2/5 flex items-center justify-between">
-              <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white hover:text-black  py-2 px-3 rounded-md uppercase text-white text-xl">
+              <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl">
                 Contact Me
               </button>
-              <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white  hover:text-black   py-2 px-3 rounded-md uppercase text-white text-xl">
+              <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white  hover:text-purple-primary   py-2 px-3 rounded-md uppercase text-white text-xl">
                 My Resume
               </button>
             </div>
@@ -56,50 +85,45 @@ function App() {
         </div>
         <div className="what-i-do mt-8 flex flex-col md:flex-row items-center justify-between  p-3">
           <div className="flex-1 order-2 md:order-none">
-            <img src={codingImg} alt="coding" />
+            <img src={codingImg} alt="coding" className=" max-h-[500px]" />
           </div>
           <div className="flex-1 self-start order-1 md:order-none">
             <h2 className=" text-5xl text-center md:text-left">What i do</h2>
             <p className="text-gray-500 md:text-2xl text-xl text-center md:text-left mt-8">
               Im Full Stack Developer,Focusing On Web Applications
             </p>
-            <div className="skills-icons mt-6 flex items-center  flex-wrap justify-center">
-              <div className=" text-6xl text-gray-500 mr-4">
+            <div className="skills-icons mt-6 flex items-center  flex-wrap  justify-center">
+              <IconSkill skillName="html-5">
                 <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
-              <div className=" text-6xl text-gray-500 mr-4">
-                <i className="fa-brands fa-html5"></i>
-              </div>
+              </IconSkill>
+              <IconSkill skillName="css3">
+                <i className="fa-brands fa-css3-alt"></i>
+              </IconSkill>
+              <IconSkill skillName="sass">
+                <i className="fa-brands fa-sass"></i>
+              </IconSkill>
+              <IconSkill skillName="javascript">
+                <i className="fa-brands fa-js"></i>
+              </IconSkill>
+              <IconSkill skillName="reactjs">
+                <i className="fa-brands fa-react"></i>
+              </IconSkill>
+              <IconSkill skillName="nodejs">
+                <i className="fa-brands fa-node-js"></i>
+              </IconSkill>
+              <IconSkill skillName="mongodb">
+                <i className="fa-solid fa-database"></i>
+              </IconSkill>
+              <IconSkill skillName="firebase">
+                <i className="fa-solid fa-fire"></i>
+              </IconSkill>
+              <IconSkill skillName="typescript">
+                <img
+                  src={typescriptImg}
+                  alt="typescript"
+                  className=" mx-auto my-0"
+                />
+              </IconSkill>
             </div>
             <div className="points text-gray-500 text-xl">
               <p>
@@ -146,10 +170,101 @@ function App() {
             </div>
           </div>
           <div className="flex-1">
-            <img src={teamCodingImg} alt="coding" />
+            <img
+              src={buildingCodeImg}
+              alt="coding"
+              className=" max-h-[500px]"
+            />
+          </div>
+        </div>
+        <div className="open-source-projects mt-6">
+          <h2 className=" capitalize text-5xl text-center md:text-left">
+            Open source projects
+          </h2>
+          <div className="projects  mt-6 ">
+            <div className="md:grid md:grid-cols-4 md:gap-4">
+              <Project />
+              <Project />
+              <Project />
+              <Project />
+              <Project />
+              <Project />
+              <Project />
+            </div>
+
+            <div className="mt-4 text-center">
+              <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl">
+                More Projects
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="contact mt-12 md:flex md:items-center md:justify-between">
+          <div className="flex-1  self-start">
+            <h2 className="text-5xl text-center md:text-left">
+              Reach Out to me!
+            </h2>
+            <div className=" uppercase mt-4 text-gray-600">
+              DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR
+              ALL.
+            </div>
+            <address className=" text-gray-600 text-xl mt-2">
+              <span className=" mr-2">
+                <i className="fa-solid fa-location-dot"></i>
+              </span>
+              Maharashtra , India
+            </address>
+            <span className=" text-2xl mt-2 block">
+              Open for opportunities: Yes
+            </span>
+            <div className=" social md:w-2/5 my-4  md:flex-row flex items-center justify-between">
+              <SocialLink href="https://github.com/PrasadBroo">
+                <i className="fa-brands fa-github"></i>
+              </SocialLink>
+
+              <SocialLink
+                className=" bg-pink-600 "
+                href="https://www.instagram.com/prasad__bro/"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </SocialLink>
+              <SocialLink
+                className=" bg-blue-700 "
+                href="https://www.facebook.com/prasadshindebro"
+              >
+                <i className="fa-brands fa-facebook"></i>
+              </SocialLink>
+
+              <SocialLink
+                className=" bg-orange-400"
+                href="https://stackoverflow.com/users/12332711/prasadbro"
+              >
+                <i className="fa-brands fa-stack-overflow"></i>
+              </SocialLink>
+              <SocialLink
+                className=" bg-blue-700 "
+                href="https://www.linkedin.com/in/prasadbro/"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </SocialLink>
+              <SocialLink
+                className=" bg-red-500"
+                href="mailto:https://sketchware7@gmail.com"
+              >
+                <i className="fa-solid fa-envelope"></i>
+              </SocialLink>
+            </div>
+          </div>
+          <div className="flex-1 flex items-center justify-center">
+            <img
+              src={prasadbroImg}
+              alt="prasad"
+              className=" max-w-[350px] border-purple-primary  rounded-full border-4"
+            />
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="p-4 relative md:flex md:items-center  shadow-md md:justify-between">
+    <nav className="p-4 sticky top-0 bg-white z-10 md:flex md:items-center  shadow-md md:justify-between">
       <a href="/" className=" text-2xl">
         <span className=" text-gray-500">{"<"} </span>
         <span className=" text-purple-primary text-3xl hover:text-red-500">
