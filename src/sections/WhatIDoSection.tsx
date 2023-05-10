@@ -30,7 +30,7 @@ export default function WhatIDoSection() {
         className="flex-1 self-start order-1 md:order-none"
       >
         <h2 className=" text-5xl text-center md:text-left">What i do</h2>
-        <p className="text-gray-500 md:text-2xl text-xl text-center md:text-left mt-8">
+        <p className="text-gray-500 dark:text-white md:text-2xl text-xl text-center md:text-left mt-8">
           Im Full Stack Developer,Focusing On Web Applications
         </p>
         <div className="skills-icons mt-6 flex items-center  flex-wrap  justify-center">
@@ -66,7 +66,7 @@ export default function WhatIDoSection() {
             />
           </IconSkill>
         </div>
-        <div className="points text-gray-500 text-xl">
+        <div className="points text-gray-500 dark:text-white text-xl">
           <p>
             <i className="fa-solid fa-bolt  mr-4 text-yellow-400"></i>
             Develope good looking User Interfaces For Wesites,Web Applications

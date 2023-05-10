@@ -14,7 +14,7 @@ export default function Footer() {
         <a
           href="https://github.com/saadpasta/developerFolio"
           target="_blank"
-          className=" underline text-purple-primary"
+          className=" underline text-purple-primary dark:text-white"
         >
           developerFolio
         </a>

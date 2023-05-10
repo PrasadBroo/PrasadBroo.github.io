@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 export default function Toggle() {
   const [isChecked, setIsChecked] = useState<boolean>(false);
+  const { toggleDarkMode, isDarkMode } = useContext(ThemeContext);
 
+  useEffect(() => {
+    setIsChecked(isDarkMode);
+  }, [isDarkMode]);
   const handleChange = () => {
     setIsChecked(!isChecked);
+    toggleDarkMode();
   };
 
   return (

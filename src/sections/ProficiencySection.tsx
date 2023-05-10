@@ -8,7 +8,10 @@ export default function ProficiencySection() {
   const isContentInView = useInView(contentRef, { once: true, amount: 0.5 });
   const isImageInView = useInView(imageRef, { once: true, amount: 0.5 });
   return (
-    <div className="proficiency mt-8 flex flex-col md:flex-row items-center justify-between  p-3">
+    <div
+      id="proficiency"
+      className="proficiency mt-8 flex flex-col md:flex-row items-center justify-between  p-3"
+    >
       <motion.div
         ref={contentRef}
         initial={{ opacity: 0, y: 50 }}

@@ -27,18 +27,18 @@ export default function Project({ project }: PropsType) {
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
       ref={ref}
-      className="project  shadow-md p-3 my-4 hover:shadow-lg block "
+      className="project  shadow-md dark:hover:bg-purple-primary dark:border dark:rounded transition dark:border-gray-400 p-3 my-4 hover:shadow-lg block "
       href={project.html_url}
       target="_blank"
     >
       <div className="">
-        <i className="fa-solid fa-book  text-xl text-purple-primary"></i>
+        <i className="fa-solid fa-book  text-xl text-purple-primary dark:text-white"></i>
 
         <h3 className=" text-2xl inline ml-4">
           {project.name.split(/_|-/).join(" ")}
         </h3>
       </div>
-      <div className="info mt-4 line-clamp-2 text-gray-700">
+      <div className="info mt-4 line-clamp-2 text-gray-700 dark:text-white">
         <span className="text-orange-600 text-xl mr-2">
           <i className="fa-solid fa-fire "></i>
         </span>
@@ -48,14 +48,14 @@ export default function Project({ project }: PropsType) {
         {project.topics.map((t: string) => (
           <span
             key={t}
-            className={`inline-block m-2 ml-0 text-sm rounded-full transition hover:bg-purple-primary text-white p-2 bg-purple-light py-1 font-semibold`}
+            className={`inline-block m-2 ml-0 text-sm rounded-full transition hover:bg-purple-primary dark:hover:bg-white text-white dark:text-black p-2 bg-purple-light py-1 font-semibold`}
           >
             {t}
           </span>
         ))}
       </div>
       <div className="mt-4 flex items-center justify-between flex-wrap">
-        <div className="flex items-center justify-between text-gray-700">
+        <div className="flex items-center justify-between text-gray-700 dark:text-white">
           <div className=" flex items-center justify-between mr-4">
             <div
               className={

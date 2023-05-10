@@ -24,7 +24,7 @@ export default function LandingSection() {
             alt="hand"
           />
         </h1>
-        <p className=" text-gray-500 md:text-2xl text-xl text-center md:text-left mt-8">
+        <p className=" text-gray-500 dark:text-white md:text-3xl text-xl text-center md:text-left mt-8">
           <i className="fas fa-laptop-code mr-3  text-purple-primary"></i>
           I'm Prasad, a MERN full-stack developer with experience building
           visually appealing and functional web applications. When I'm not

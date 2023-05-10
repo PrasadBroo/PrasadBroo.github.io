@@ -22,14 +22,17 @@ export default function OpenSourceSection({ projects }: PropsType) {
       </motion.h2>
       <div className="projects  mt-6 ">
         <div className="md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-4">
-          {projects &&
-            projects.map((p) => <Project project={p} key={p.id} />)}
+          {projects && projects.map((p) => <Project project={p} key={p.id} />)}
         </div>
 
         <div className="mt-4 text-center">
-          <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl">
+          <a
+            href="https://github.com/PrasadBroo"
+            target="_blank"
+            className=" bg-purple-primary cursor-pointer border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl"
+          >
             More Projects
-          </button>
+          </a>
         </div>
       </div>
     </div>

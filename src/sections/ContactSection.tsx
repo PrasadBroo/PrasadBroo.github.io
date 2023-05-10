@@ -9,7 +9,10 @@ export default function ContactSection() {
   const isContentInView = useInView(contentRef, { once: true, amount: 0.5 });
   const isImageInView = useInView(imageRef, { once: true, amount: 0.5 });
   return (
-    <div id="contact" className="contact mt-12 md:flex md:items-center md:justify-between">
+    <div
+      id="contact"
+      className="contact mt-12 md:flex md:items-center md:justify-between"
+    >
       <motion.div
         ref={contentRef}
         initial={{ opacity: 0, y: 50 }}
@@ -17,10 +20,10 @@ export default function ContactSection() {
         className="flex-1  self-start"
       >
         <h2 className="text-5xl text-center md:text-left">Reach Out to me!</h2>
-        <div className=" uppercase mt-4 text-gray-600">
+        <div className=" uppercase mt-4 text-gray-600 dark:text-white">
           DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.
         </div>
-        <address className=" text-gray-600 text-xl mt-2">
+        <address className=" text-gray-600 dark:text-white text-xl mt-2">
           <span className=" mr-2">
             <i className="fa-solid fa-location-dot"></i>
           </span>
@@ -76,7 +79,7 @@ export default function ContactSection() {
         <img
           src={prasadbroImg}
           alt="prasad"
-          className=" max-w-[350px] border-purple-primary  rounded-full border-4"
+          className=" max-w-[300px] border-purple-primary  rounded-full border-8"
         />
       </motion.div>
     </div>
