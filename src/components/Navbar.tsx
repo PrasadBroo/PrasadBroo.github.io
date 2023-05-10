@@ -5,10 +5,10 @@ import Toggle from "./Toggle";
 export default function Navbar() {
   const [navActive, setNavActive] = useState<boolean>(false);
   const listClassNames = classNames(
-    "md:relative md:flex md:items-center transition-[max-height] ease-in-out  py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:opacity-100 transition text-xl absolute bg-white left-0 right-0  top-200",
+    "md:relative md:flex md:items-center  ease-in transition md:translate-y-0   py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:opacity-100 transition text-xl absolute bg-white left-0 right-0  top-200",
     {
-      "max-h-64 opacity-100 pointer-events-auto": navActive,
-      "max-h-0 opacity-0  pointer-events-none": !navActive,
+      "opacity-100 translate-y-0  pointer-events-auto": navActive,
+      "opacity-0 translate-y-4  pointer-events-none": !navActive,
     }
   );
 
@@ -48,13 +48,13 @@ export default function Navbar() {
         <a href="#skills" className=" md:mr-8 hover:bg-gray-200 p-3  block">
           Skills
         </a>
-        <a href="#skills" className=" md:mr-8 hover:bg-gray-200 p-3 block">
+        <a href="#projects" className=" md:mr-8 hover:bg-gray-200 p-3 block">
           Projects
         </a>
-        <a href="#skills" className=" md:mr-8 hover:bg-gray-200 p-3 block">
+        <a href="#contact" className=" md:mr-8 hover:bg-gray-200 p-3 block">
           Contact
         </a>
-        <a href="#skills" className=" md:mr-8 hover:bg-gray-200 p-3 block">
+        <a href="#contact" className=" md:mr-8 hover:bg-gray-200 p-3 block">
           Support
         </a>
         <div className="switch p-3 hover:bg-gray-200">
