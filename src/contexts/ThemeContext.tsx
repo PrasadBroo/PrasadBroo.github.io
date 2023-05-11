@@ -32,7 +32,9 @@ export function ThemeProvider({ children }: PropsType) {
   }, []);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark");
+    if (isDarkMode) document.documentElement.classList.add("dark");
+    else document.documentElement.classList.remove("dark");
+
     localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 

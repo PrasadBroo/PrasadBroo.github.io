@@ -1029,6 +1029,11 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1042,11 +1047,6 @@ video {
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1175,18 +1175,6 @@ html{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-@media (max-width: 640px) {
-  .max-\[640px\]\:overflow-hidden {
-    overflow: hidden;
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:overflow-hidden {
-    overflow: hidden;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:pointer-events-auto {
     pointer-events: auto;
@@ -1250,10 +1238,6 @@ html{
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:overflow-clip {
-    overflow: clip;
   }
 
   .md\:py-0 {
