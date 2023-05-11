@@ -30,13 +30,16 @@ function App() {
   }, []);
 
   return (
-    <div className="App font-mono overflow-hidden">
+    <div className="App font-mono">
       <Navbar />
       <main className="  w-11/12 mx-auto md:mt-16 mt-8">
         <LandingSection />
         <WhatIDoSection />
         <ProficiencySection />
-        <OpenSourceSection projects={projects || []} fetchError={projectsFetchError}/>
+        <OpenSourceSection
+          projects={projects || []}
+          fetchError={projectsFetchError}
+        />
         <ContactSection />
       </main>
       <Footer />
