@@ -13,8 +13,7 @@ import { ProjectType } from "./types/projectTypes";
 function App() {
   const [projects, setProjects] = useState<ProjectType[] | null>(null);
   const [projectsFetchError, setProjectsFetchError] = useState("");
-  console.log(projectsFetchError);
-  
+
   useEffect(() => {
     (async () => {
       try {
@@ -37,7 +36,7 @@ function App() {
         <LandingSection />
         <WhatIDoSection />
         <ProficiencySection />
-        <OpenSourceSection projects={projects || []} />
+        <OpenSourceSection projects={projects || []} fetchError={projectsFetchError}/>
         <ContactSection />
       </main>
       <Footer />

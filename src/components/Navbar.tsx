@@ -5,10 +5,10 @@ import Toggle from "./Toggle";
 export default function Navbar() {
   const [navActive, setNavActive] = useState<boolean>(false);
   const listClassNames = classNames(
-    "md:relative md:flex md:items-center  bg-white dark:bg-bg-secondary ease-in transition-[height] md:overflow-clip   py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition text-xl absolute  left-0 right-0  top-200",
+    "md:relative md:flex md:items-center   bg-white dark:bg-bg-secondary ease-in transition-[height]  py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition text-xl absolute  left-0 right-0  top-200",
     {
       " h-72  pointer-events-auto": navActive,
-      " h-0  pointer-events-none overflow-hidden": !navActive,
+      " h-0  pointer-events-none max-[sm]:overflow-hidden": !navActive,
     }
   );
 
@@ -69,7 +69,7 @@ export default function Navbar() {
         >
           Proficiency
         </a>
-        <div className="switch p-3 hover:bg-gray-200">
+        <div className="switch p-3 hover:bg-gray-200 dark:hover:bg-purple-primary">
           <Toggle />
         </div>
       </ul>

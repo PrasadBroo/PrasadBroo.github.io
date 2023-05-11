@@ -5,9 +5,10 @@ import { ProjectType } from "../types/projectTypes";
 
 type PropsType = {
   projects: ProjectType[];
+  fetchError: string;
 };
 
-export default function OpenSourceSection({ projects }: PropsType) {
+export default function OpenSourceSection({ projects, fetchError }: PropsType) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.7 });
   return (
@@ -22,6 +23,9 @@ export default function OpenSourceSection({ projects }: PropsType) {
       </motion.h2>
       <div className="projects  mt-6 ">
         <div className="md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-4">
+          {fetchError && (
+            <span className=" text-red-600 text-2xl">{fetchError}</span>
+          )}
           {projects && projects.map((p) => <Project project={p} key={p.id} />)}
         </div>
 

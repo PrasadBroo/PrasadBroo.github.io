@@ -1044,6 +1044,11 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1168,6 +1173,18 @@ html{
 :is(.dark .dark\:hover\:bg-white:hover) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 640px) {
+  .max-\[640px\]\:overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:overflow-hidden {
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 768px) {

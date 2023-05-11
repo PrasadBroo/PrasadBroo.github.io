@@ -21,10 +21,16 @@ export function ThemeProvider({ children }: PropsType) {
     const isDarkMode = JSON.parse(
       localStorage.getItem("isDarkMode") || "false"
     );
-    if (isDarkMode) toggleDarkMode();
+
+    if (
+      isDarkMode ||
+      (window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setIsDarkMode(true);
+    }
   }, []);
 
-  
   useEffect(() => {
     document.documentElement.classList.toggle("dark");
     localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
