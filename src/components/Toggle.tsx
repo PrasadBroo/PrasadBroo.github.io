@@ -8,6 +8,8 @@ export default function Toggle() {
   useEffect(() => {
     setIsChecked(isDarkMode);
   }, [isDarkMode]);
+
+  
   const handleChange = () => {
     setIsChecked(!isChecked);
     toggleDarkMode();

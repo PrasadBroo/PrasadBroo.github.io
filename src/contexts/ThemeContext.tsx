@@ -22,13 +22,7 @@ export function ThemeProvider({ children }: PropsType) {
       localStorage.getItem("isDarkMode") || "false"
     );
 
-    if (
-      isDarkMode ||
-      (window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      setIsDarkMode(true);
-    }
+    isDarkMode ? setIsDarkMode(true) : setIsDarkMode(false);
   }, []);
 
   useEffect(() => {
