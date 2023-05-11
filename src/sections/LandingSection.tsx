@@ -15,8 +15,8 @@ export default function LandingSection() {
       variants={varinats}
       className="landing flex items-center justify-between p-3 flex-col md:flex-row"
     >
-      <div className=" flex-1">
-        <h1 className=" md:text-6xl font-extrabold text-3xl text-center md:text-left">
+      <div className="flex-1 md:flex-[1.5] lg:flex-1">
+        <h1 className=" font-extrabold text-3xl md:text-5xl  text-center md:text-left">
           Hi all, i'm Prasad{" "}
           <img
             className=" h-12 w-12 lg:h-16 lg:w-16 inline-block"
@@ -24,7 +24,7 @@ export default function LandingSection() {
             alt="hand"
           />
         </h1>
-        <p className=" text-gray-500 dark:text-white md:text-3xl text-xl text-center md:text-left mt-8">
+        <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-2xl  text-xl text-center md:text-left mt-8">
           <i className="fas fa-laptop-code mr-3  text-purple-primary dark:text-white"></i>
           I'm Prasad, a MERN full-stack developer with experience building
           visually appealing and functional web applications. When I'm not

@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App font-mono">
       <Navbar />
-      <main className="  w-11/12 mx-auto md:mt-16 mt-8">
+      <main className="  w-11/12 mx-auto md:mt-16 mt-8 overflow-hidden">
         <LandingSection />
         <WhatIDoSection />
         <ProficiencySection />
