@@ -13,6 +13,7 @@ export default function LandingSection() {
       initial="hidden"
       animate="visible"
       variants={varinats}
+      transition={{duration:1}}
       className="landing flex items-center justify-between p-3 flex-col md:flex-row"
     >
       <div className="flex-1 md:flex-[1.5] lg:flex-1">

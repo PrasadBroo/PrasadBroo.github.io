@@ -16,6 +16,7 @@ export default function OpenSourceSection({ projects, fetchError }: PropsType) {
       <motion.h2
         initial={{ opacity: 0, x: -50 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}
+        transition={{duration:1}}
         ref={ref}
         className=" capitalize text-5xl text-center md:text-left"
       >

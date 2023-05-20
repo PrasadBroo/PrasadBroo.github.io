@@ -17,6 +17,7 @@ export default function ContactSection() {
         ref={contentRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isContentInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
         className="flex-1  self-start"
       >
         <h2 className="text-5xl text-center md:text-left">Reach Out to me!</h2>
@@ -74,6 +75,7 @@ export default function ContactSection() {
         ref={imageRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isImageInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5 }}
         className="flex-1 flex items-center justify-center"
       >
         <img

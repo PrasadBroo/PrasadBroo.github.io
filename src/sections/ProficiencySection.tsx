@@ -16,6 +16,7 @@ export default function ProficiencySection() {
         ref={contentRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isContentInView ? { opacity: 1, y: 0 } : {}}
+        transition={{duration:1}}
         className="flex-1 self-start"
       >
         <div className="">
@@ -44,6 +45,7 @@ export default function ProficiencySection() {
         ref={imageRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isImageInView ? { opacity: 1, y: 0 } : {}}
+        transition={{duration:1}}
         className="flex-1"
       >
         <img src={buildingCodeImg} alt="coding" className=" max-h-[500px]" />

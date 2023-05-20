@@ -19,6 +19,7 @@ export default function WhatIDoSection() {
         ref={imageRef}
         initial={{ opacity: 0, x: -50 }}
         animate={isImageInView ? { opacity: 1, x: 0 } : { opacity: 0 }}
+        transition={{duration:0.5}}
         className="flex-1 order-2 md:order-none"
       >
         <img src={codingImg} alt="coding" className=" max-h-[500px]" />
@@ -27,6 +28,7 @@ export default function WhatIDoSection() {
         ref={contentRef}
         initial={{ opacity: 0, x: 50 }}
         animate={isContentInView ? { opacity: 1, x: 0 } : { opacity: 0 }}
+        transition={{duration:0.5}}
         className="flex-1 self-start order-1 md:order-none"
       >
         <h2 className=" text-5xl text-center md:text-left">What i do</h2>

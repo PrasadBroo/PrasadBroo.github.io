@@ -26,6 +26,7 @@ export default function Project({ project }: PropsType) {
     <motion.a
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
+      transition={{duration:0.5}}
       ref={ref}
       className="project  shadow-md dark:hover:bg-purple-primary dark:border dark:rounded transition dark:border-gray-400 p-3 my-4 hover:shadow-lg block "
       href={project.html_url}
