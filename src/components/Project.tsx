@@ -26,7 +26,7 @@ export default function Project({ project }: PropsType) {
     <motion.a
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
-      transition={{duration:0.5}}
+      transition={{ duration: 0.5 }}
       ref={ref}
       className="project  shadow-md dark:hover:bg-purple-primary dark:border dark:rounded transition dark:border-gray-400 p-3 my-4 hover:shadow-lg block "
       href={project.html_url}
@@ -37,6 +37,11 @@ export default function Project({ project }: PropsType) {
 
         <h3 className=" text-2xl inline ml-4">
           {project.name.split(/_|-/).join(" ")}
+          {project.archived && (
+            <sup className="archived bg-red-400 align-super text-white p-1 rounded-lg text-[10px]">
+              archived
+            </sup>
+          )}
         </h3>
       </div>
       <div className="info mt-4 line-clamp-2 text-gray-700 dark:text-white">
