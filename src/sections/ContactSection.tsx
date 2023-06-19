@@ -82,6 +82,7 @@ export default function ContactSection() {
           src={prasadbroImg}
           alt="prasad"
           className=" max-w-[300px] border-purple-primary  rounded-full border-8"
+          loading="lazy"
         />
       </motion.div>
     </div>

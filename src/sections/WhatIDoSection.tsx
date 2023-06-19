@@ -22,7 +22,7 @@ export default function WhatIDoSection() {
         transition={{duration:0.5}}
         className="flex-1 order-2 md:order-none"
       >
-        <img src={codingImg} alt="coding" className=" max-h-[500px]" />
+        <img src={codingImg} alt="coding" className=" max-h-[500px]" loading="lazy"/>
       </motion.div>
       <motion.div
         ref={contentRef}

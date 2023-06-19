@@ -48,7 +48,7 @@ export default function ProficiencySection() {
         transition={{duration:1}}
         className="flex-1"
       >
-        <img src={buildingCodeImg} alt="coding" className=" max-h-[500px]" />
+        <img src={buildingCodeImg} alt="coding" className=" max-h-[500px]" loading="lazy"/>
       </motion.div>
     </div>
   );

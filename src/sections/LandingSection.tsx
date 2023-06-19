@@ -2,6 +2,7 @@ import SocialLink from "../components/SocialLink";
 import manOTableImg from "../assets/images/manOnTable.52be3144.svg";
 import handImg from "../assets/images/hand.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const varinats = {
   hidden: { opacity: 0 },
@@ -74,9 +75,9 @@ export default function LandingSection() {
           <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl">
             Contact Me
           </button>
-          <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white  hover:text-purple-primary   py-2 px-3 rounded-md uppercase text-white text-xl">
+          <Link to="resume" className=" bg-purple-primary border-purple-primary border transition hover:bg-white  hover:text-purple-primary   py-2 px-3 rounded-md uppercase text-white text-xl">
             My Resume
-          </button>
+          </Link>
         </div>
       </div>
       <div className=" flex-1 mt-16 md:mt-0">
