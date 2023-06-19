@@ -9,7 +9,7 @@ export default function ResumePage() {
   return (
     <div className="resume ">
       <Document
-        className="w-full"
+        className="w-full mt-8"
         file={{
           url: "/files/resume.pdf",
         }}
