@@ -13,22 +13,27 @@ export default function WhatIDoSection() {
   return (
     <div
       id="skills"
-      className="what-i-do mt-8 flex flex-col md:flex-row items-center justify-between  p-3"
+      className="what-i-do mt-8 flex flex-col md:flex-row items-center justify-between  p-3 scroll-mt-20"
     >
       <motion.div
         ref={imageRef}
         initial={{ opacity: 0, x: -50 }}
         animate={isImageInView ? { opacity: 1, x: 0 } : { opacity: 0 }}
-        transition={{duration:0.5}}
+        transition={{ duration: 0.5 }}
         className="flex-1 order-2 md:order-none"
       >
-        <img src={codingImg} alt="coding" className=" max-h-[500px]" loading="lazy"/>
+        <img
+          src={codingImg}
+          alt="coding"
+          className=" max-h-[500px]"
+          loading="lazy"
+        />
       </motion.div>
       <motion.div
         ref={contentRef}
         initial={{ opacity: 0, x: 50 }}
         animate={isContentInView ? { opacity: 1, x: 0 } : { opacity: 0 }}
-        transition={{duration:0.5}}
+        transition={{ duration: 0.5 }}
         className="flex-1 self-start order-1 md:order-none"
       >
         <h2 className=" text-5xl text-center md:text-left">What i do</h2>

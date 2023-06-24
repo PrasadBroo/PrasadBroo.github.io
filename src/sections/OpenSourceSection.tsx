@@ -12,7 +12,7 @@ export default function OpenSourceSection({ projects, fetchError }: PropsType) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.7 });
   return (
-    <div id="projects" className="open-source-projects mt-6">
+    <div id="projects" className="open-source-projects mt-6 scroll-mt-20">
       <motion.h2
         initial={{ opacity: 0, x: -50 }}
         animate={isInView ? { opacity: 1, x: 0 } : {}}

@@ -11,7 +11,7 @@ export default function ContactSection() {
   return (
     <div
       id="contact"
-      className="contact mt-12 md:flex md:items-center md:justify-between"
+      className="contact mt-12 md:flex md:items-center md:justify-between scroll-mt-20"
     >
       <motion.div
         ref={contentRef}
@@ -82,7 +82,6 @@ export default function ContactSection() {
           src={prasadbroImg}
           alt="prasad"
           className=" max-w-[300px] border-purple-primary  rounded-full border-8"
-          loading="lazy"
         />
       </motion.div>
     </div>

@@ -14,7 +14,7 @@ export default function LandingSection() {
       initial="hidden"
       animate="visible"
       variants={varinats}
-      transition={{duration:1}}
+      transition={{ duration: 1 }}
       className="landing flex items-center justify-between p-3 flex-col md:flex-row"
     >
       <div className="flex-1 md:flex-[1.5] lg:flex-1">
@@ -72,10 +72,16 @@ export default function LandingSection() {
           </SocialLink>
         </div>
         <div className="btns mt-8 lg:w-1/2 flex items-center justify-between">
-          <button className=" bg-purple-primary border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl">
+          <a
+            href="#contact"
+            className=" bg-purple-primary  border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl"
+          >
             Contact Me
-          </button>
-          <Link to="resume" className=" bg-purple-primary border-purple-primary border transition hover:bg-white  hover:text-purple-primary   py-2 px-3 rounded-md uppercase text-white text-xl">
+          </a>
+          <Link
+            to="resume"
+            className=" bg-purple-primary border-purple-primary border transition hover:bg-white  hover:text-purple-primary   py-2 px-3 rounded-md uppercase text-white text-xl"
+          >
             My Resume
           </Link>
         </div>

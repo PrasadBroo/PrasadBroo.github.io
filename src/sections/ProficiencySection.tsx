@@ -10,13 +10,13 @@ export default function ProficiencySection() {
   return (
     <div
       id="proficiency"
-      className="proficiency mt-8 flex flex-col md:flex-row items-center justify-between  p-3"
+      className="proficiency mt-8 flex flex-col md:flex-row items-center justify-between  p-3 scroll-mt-20"
     >
       <motion.div
         ref={contentRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isContentInView ? { opacity: 1, y: 0 } : {}}
-        transition={{duration:1}}
+        transition={{ duration: 1 }}
         className="flex-1 self-start"
       >
         <div className="">
@@ -45,10 +45,15 @@ export default function ProficiencySection() {
         ref={imageRef}
         initial={{ opacity: 0, y: 50 }}
         animate={isImageInView ? { opacity: 1, y: 0 } : {}}
-        transition={{duration:1}}
+        transition={{ duration: 1 }}
         className="flex-1"
       >
-        <img src={buildingCodeImg} alt="coding" className=" max-h-[500px]" loading="lazy"/>
+        <img
+          src={buildingCodeImg}
+          alt="coding"
+          className=" max-h-[500px]"
+          loading="lazy"
+        />
       </motion.div>
     </div>
   );
