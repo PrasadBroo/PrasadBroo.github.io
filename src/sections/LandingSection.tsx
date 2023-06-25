@@ -20,10 +20,18 @@ export default function LandingSection() {
       <div className="flex-1 md:flex-[1.5] lg:flex-1">
         <h1 className=" font-extrabold text-3xl md:text-5xl  text-center md:text-left">
           Hi all, i'm Prasad{" "}
-          <img
+          <motion.img
             className=" h-12 w-12 lg:h-16 lg:w-16 inline-block"
             src={handImg}
             alt="hand"
+            initial={{ rotate: 0 }}
+            animate={{ rotate: [0, -10, 12, -10, 9, 0, 0] }}
+            transition={{
+              duration: 1,
+              delay: 2,
+              repeat: Infinity,
+              repeatDelay: 2,
+            }}
           />
         </h1>
         <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-2xl  text-xl text-center md:text-left mt-8">
