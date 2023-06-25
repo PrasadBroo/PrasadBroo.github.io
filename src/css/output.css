@@ -804,10 +804,6 @@ video {
   scroll-margin-top: 5rem;
 }
 
-.scroll-mt-8 {
-  scroll-margin-top: 2rem;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -834,6 +830,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-full {

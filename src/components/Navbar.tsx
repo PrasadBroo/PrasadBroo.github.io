@@ -5,10 +5,10 @@ import Toggle from "./Toggle";
 export default function Navbar() {
   const [navActive, setNavActive] = useState<boolean>(false);
   const listClassNames = classNames(
-    "md:relative md:flex md:items-center  md:text-base lg:text-xl  md:overflow-clip bg-white dark:bg-bg-secondary ease-in transition-[height]  py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition text-xl absolute  left-0 right-0  top-200",
+    "md:relative md:flex md:items-center overflow-y-hidden  md:text-base lg:text-xl  md:overflow-clip bg-white dark:bg-bg-secondary ease-in transition-[height]  py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition text-xl absolute  left-0 right-0  top-200",
     {
       " h-72  pointer-events-auto": navActive,
-      " h-0  pointer-events-none overflow-hidden": !navActive,
+      " h-0  pointer-events-none ": !navActive,
     }
   );
 
@@ -47,25 +47,25 @@ export default function Navbar() {
       <ul className={listClassNames}>
         <a
           href="#skills"
-          className=" lg:mr-8 md:mr-4  hover:bg-gray-200 dark:hover:bg-purple-primary p-3  block"
+          className=" lg:mr-8 md:mr-4 ease-in  hover:bg-gray-200 dark:hover:bg-purple-primary p-3  block"
         >
           Skills
         </a>
         <a
           href="#projects"
-          className=" lg:mr-8 md:mr-4  hover:bg-gray-200 dark:hover:bg-purple-primary p-3 block"
+          className=" lg:mr-8 md:mr-4 ease-in  hover:bg-gray-200 dark:hover:bg-purple-primary p-3 block"
         >
           Projects
         </a>
         <a
           href="#contact"
-          className=" lg:mr-8 md:mr-4  hover:bg-gray-200 dark:hover:bg-purple-primary p-3 block"
+          className=" lg:mr-8 md:mr-4 ease-in  hover:bg-gray-200 dark:hover:bg-purple-primary p-3 block"
         >
           Contact
         </a>
         <a
           href="#proficiency"
-          className=" lg:mr-8 md:mr-4  hover:bg-gray-200 dark:hover:bg-purple-primary p-3 block"
+          className=" lg:mr-8 md:mr-4 ease-in  hover:bg-gray-200 dark:hover:bg-purple-primary p-3 block"
         >
           Proficiency
         </a>
