@@ -65,11 +65,11 @@ export default function Project({ project }: PropsType) {
           <div className=" flex items-center justify-between mr-4">
             <div
               className={
-                " h-3 w-3 rounded-full  mr-2 " +
-                languageColors[project.language as keyof LanguageColorsType]
+                ` h-3 w-3 rounded-full  mr-2 ${languageColors[project.language as keyof LanguageColorsType] ??
+                " bg-purple-light"}`
               }
             ></div>
-            <span>{project.language}</span>
+            <span>{project.language ?? "💗"}</span>
           </div>
           <div className="flex items-center justify-between mr-4">
             <span className=" mr-2">
