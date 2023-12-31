@@ -1,11 +1,9 @@
-import { useContext } from "react";
 import { Document, pdfjs, Page } from "react-pdf";
-import { ThemeContext } from "../contexts/ThemeContext";
+
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 export default function ResumePage() {
-  const { isDarkMode } = useContext(ThemeContext);
   return (
     <div className="resume ">
       <Document
@@ -19,7 +17,7 @@ export default function ResumePage() {
           className=" flex justify-center items-center"
           height={window.outerHeight / 1.5}
           width={window.outerWidth / 1.5}
-          canvasBackground={isDarkMode ? "#171c28" : "#fff"}
+          canvasBackground={"#fff"}
           pageNumber={1}
           renderTextLayer={false}
           renderAnnotationLayer={false}

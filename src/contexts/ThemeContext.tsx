@@ -18,17 +18,26 @@ export function ThemeProvider({ children }: PropsType) {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    const isDarkMode = JSON.parse(
-      localStorage.getItem("isDarkMode") || "false"
-    );
-
-    isDarkMode ? setIsDarkMode(true) : setIsDarkMode(false);
+    if (
+      !localStorage.getItem("isDarkMode") &&
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
+      setIsDarkMode(true);
+    } else {
+      const isDarkMode = JSON.parse(
+        localStorage.getItem("isDarkMode") || "false"
+      );
+      isDarkMode ? setIsDarkMode(true) : setIsDarkMode(false);
+    }
+    return () => {
+      localStorage.removeItem("isDarkMode");
+    };
   }, []);
 
   useEffect(() => {
     if (isDarkMode) document.documentElement.classList.add("dark");
     else document.documentElement.classList.remove("dark");
-
     localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
