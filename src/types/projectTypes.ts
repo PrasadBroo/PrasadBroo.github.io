@@ -72,7 +72,7 @@ export interface ProjectType {
   allow_forking: boolean;
   is_template: boolean;
   web_commit_signoff_required: boolean;
-  topics: unknown[];
+  topics: string[];
   visibility: string;
   forks: number;
   open_issues: number;

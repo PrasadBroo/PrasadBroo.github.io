@@ -51,7 +51,7 @@ export default function Project({ project }: PropsType) {
         {project.description}
       </div>
       <div className="">
-        {project.topics.map((t: string) => (
+        {project.topics.map((t) => (
           <span
             key={t}
             className={`inline-block m-2 ml-0 text-sm rounded-full transition hover:bg-purple-primary dark:hover:bg-white text-white dark:text-black p-2 bg-purple-light py-1 font-semibold`}
