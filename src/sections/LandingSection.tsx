@@ -68,7 +68,7 @@ export default function LandingSection() {
           </SocialLink>
           <SocialLink
             className=" bg-blue-700 "
-            href="https://www.linkedin.com/in/prasadbro/"
+            href="https://www.linkedin.com/in/prasadshinde-dev/"
           >
             <i className="fa-brands fa-linkedin"></i>
           </SocialLink>
