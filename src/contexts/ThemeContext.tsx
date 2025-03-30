@@ -28,7 +28,7 @@ export function ThemeProvider({ children }: PropsType) {
       const isDarkMode = JSON.parse(
         localStorage.getItem("isDarkMode") || "false"
       );
-      isDarkMode ? setIsDarkMode(true) : setIsDarkMode(false);
+      setIsDarkMode(isDarkMode);
     }
     return () => {
       localStorage.removeItem("isDarkMode");
