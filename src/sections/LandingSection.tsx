@@ -20,7 +20,7 @@ const SOCIAL_LINKS = [
     id: "github",
     icon: <FaGithub />,
     url: "https://github.com/PrasadBroo",
-    className: "bg-greay-700 border dark:border-gray-700 border-gray-200",
+    className: "bg-gray-700 border dark:border-gray-700 border-gray-200",
   },
   {
     id: "leetcode",
@@ -99,7 +99,7 @@ export default function LandingSection() {
               target="_blank"
               key={link.id}
               className={clsx(
-                "h-10 w-10 rounded-full transition hover:bg-gray-800 text-white text-2xl flex items-center justify-center",
+                "h-10 w-10 rounded-full hover:bg-gray-800 text-white text-2xl flex items-center justify-center hover:scale-95 transition-transform",
                 link.className
               )}
             >
@@ -110,13 +110,13 @@ export default function LandingSection() {
         <div className="btns mt-8 lg:w-1/2 flex items-center justify-between">
           <Link
             href="#contact"
-            className=" bg-purple-primary  border-purple-primary border transition hover:bg-white hover:text-purple-primary  py-2 px-3 rounded-md uppercase text-white text-xl"
+            className=" bg-purple-900  border-purple-700 border transition hover:bg-white hover:text-purple-600 dark:hover:text-purple-700  py-2 px-3 rounded-md uppercase text-white text-xl"
           >
             Contact Me
           </Link>
           <Link
             href="resume"
-            className=" bg-purple-primary border-purple-primary border transition hover:bg-white  hover:text-purple-primary   py-2 px-3 rounded-md uppercase text-white text-xl"
+            className=" bg-gray-900  border dark:border-gray-700 border-gray-200 transition hover:bg-white  hover:text-purple-600   py-2 px-3 rounded-md uppercase text-white text-xl"
           >
             My Resume
           </Link>
