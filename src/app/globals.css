@@ -12,9 +12,9 @@
   --font-montserrat: var(--font-montserrat);
 }
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@dark [data-theme="dark"] (&:where(.dark, .dark *));
 
-:root[data-theme="dark"] {
+:root [data-theme="dark"] {
   --background: #171c28;
   --foreground: #ededed;
 }
