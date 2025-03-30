@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
 const montserrat = Montserrat({
-  variable: "--font-montserrat",
+  variable: "--font-geist-montserrat",
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -25,13 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="dark">
       <body
-        className={clsx(
-          "antialiased text-foreground font-montserrat",
-          geistSans.variable,
-          montserrat.variable
-        )}
+        className={clsx("antialiased text-foreground ", montserrat.className)}
       >
         {children}
       </body>
