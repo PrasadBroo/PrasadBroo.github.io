@@ -36,12 +36,17 @@ export function ThemeProvider({ children }: PropsType) {
   }, []);
 
   useEffect(() => {
-    if (isDarkMode) document.documentElement.classList.add("dark");
-    else document.documentElement.classList.remove("dark");
+    if (isDarkMode)
+      document.documentElement.setAttribute(
+        "data-theme",
+        isDarkMode ? "dark" : "light"
+      );
+    else document.documentElement.removeAttribute("data-theme");
     localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
   const toggleDarkMode = () => {
+    console.log("I ran");
     setIsDarkMode((prev) => !prev);
   };
 

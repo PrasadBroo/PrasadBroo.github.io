@@ -23,7 +23,7 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="p-4  sticky top-0  z-10 md:flex   md:items-center shadow-md md:justify-between border-b dark:border-gray-700 border-gray-300">
+    <nav className="p-4  sticky top-0  z-10 md:flex   md:items-center shadow-md md:justify-between border-b dark:border-gray-700 border-gray-200">
       <Link href="/" className=" text-2xl">
         <span className=" text-gray-500">{"<"} </span>
         <span className=" text-purple-800 dark:text-gray-50  md:text-xl lg:text-3xl hover:text-indigo-500 mx-2 tracking-widest">

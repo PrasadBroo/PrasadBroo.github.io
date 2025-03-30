@@ -6,7 +6,10 @@ export default function ToggleThemeButton() {
   const { toggleDarkMode, isDarkMode } = useTheme();
 
   return (
-    <label className="flex h-6 w-full cursor-pointer items-center">
+    <label
+      className="flex h-6 w-full cursor-pointer items-center"
+      htmlFor="theme-toggle"
+    >
       <div
         className={clsx(
           "relative inline-block  w-12 rounded-full transition-colors duration-300",
@@ -31,6 +34,7 @@ export default function ToggleThemeButton() {
 
         <input
           type="checkbox"
+          id="theme-toggle"
           className="opacity-0 absolute w-full h-full"
           checked={isDarkMode}
           onChange={toggleDarkMode}
