@@ -6,7 +6,7 @@ import clsx from "clsx";
 const montserrat = Montserrat({
   variable: "--font-geist-montserrat",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "700", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="dark">
       <body
-        className={clsx("antialiased text-foreground ", montserrat.className)}
+        className={clsx(
+          "antialiased text-foreground transition-colors duration-700",
+          montserrat.className
+        )}
       >
         {children}
       </body>
