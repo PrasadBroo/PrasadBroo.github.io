@@ -21,21 +21,21 @@ export default function ProficiencySection() {
         <div className="">
           <h2 className="text-5xl text-center md:text-left">Proficiency</h2>
           <div className="skill mt-6">
-            <div className=" mb-4 text-2xl">Frontend/Design</div>
-            <div className="w-full h-4 rounded-lg bg-gray-300">
-              <div className=" w-11/12 h-full rounded-lg bg-purple-light"></div>
+            <div className=" mb-4 text-2xl">Frontend</div>
+            <div className="w-full h-4 rounded-lg bg-gray-300 dark:bg-gray-50">
+              <div className=" w-11/12 h-full rounded-lg bg-purple-700 dark:bg-purple-500"></div>
             </div>
           </div>
           <div className="skill mt-6">
             <div className=" mb-4 text-2xl">Backend</div>
-            <div className="w-full h-4 rounded-lg bg-gray-300">
-              <div className=" w-3/5 h-full rounded-lg bg-purple-light"></div>
+            <div className="w-full h-4 rounded-lg bg-gray-300 dark:bg-gray-50">
+              <div className=" w-4/5 h-full rounded-lg bg-purple-700 dark:bg-purple-500"></div>
             </div>
           </div>
           <div className="skill mt-6">
             <div className=" mb-4 text-2xl">Programming</div>
-            <div className="w-full h-4 rounded-lg bg-gray-300">
-              <div className=" w-4/5 h-full rounded-lg bg-purple-light"></div>
+            <div className="w-full h-4 rounded-lg bg-gray-300 dark:bg-gray-50">
+              <div className=" w-4/5 h-full rounded-lg bg-purple-700 dark:bg-purple-500"></div>
             </div>
           </div>
         </div>
