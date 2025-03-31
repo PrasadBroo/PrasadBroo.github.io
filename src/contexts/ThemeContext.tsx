@@ -25,8 +25,8 @@ export function ThemeProvider({ children }: PropsType) {
     ) {
       setTheme("dark");
     } else {
-      const isDarkMode = JSON.parse(localStorage.getItem("theme") || "false");
-      setTheme(isDarkMode ? "dark" : "light");
+      const theme = localStorage.getItem("theme") as ThemeContextProps["theme"];
+      setTheme(theme);
     }
     return () => {
       localStorage.removeItem("theme");
@@ -34,10 +34,10 @@ export function ThemeProvider({ children }: PropsType) {
   }, []);
 
   useEffect(() => {
-    if (theme === "dark")
-      document.documentElement.setAttribute("data-theme", theme);
-    else document.documentElement.removeAttribute("data-theme");
-    localStorage.setItem("theme", JSON.stringify(theme));
+    console.log(theme);
+    if (!theme) return;
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleDarkMode = () => {
