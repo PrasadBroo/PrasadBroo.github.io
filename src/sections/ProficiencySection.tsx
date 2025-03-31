@@ -16,26 +16,40 @@ export default function ProficiencySection() {
         initial={{ opacity: 0, y: 50 }}
         animate={isContentInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
-        className="flex-1 self-start"
+        className="flex-1 self-start w-full md:w-auto"
       >
-        <div className="">
-          <h2 className="text-5xl text-center md:text-left">Proficiency</h2>
-          <div className="skill mt-6">
-            <div className=" mb-4 text-2xl">Frontend</div>
-            <div className="w-full h-4 rounded-lg bg-gray-300 dark:bg-gray-50">
-              <div className=" w-11/12 h-full rounded-lg bg-purple-700 dark:bg-purple-500"></div>
+        <div className="p-4 md:p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg">
+          <h2 className="text-5xl font-bold text-center md:text-left bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent mb-8">
+            Proficiency
+          </h2>
+
+          <div className="skill mt-8">
+            <div className="flex justify-between mb-2">
+              <span className="text-2xl font-semibold">Frontend</span>
+              <span className="text-xl font-medium">90%</span>
+            </div>
+            <div className="w-full h-5 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
+              <div className="w-11/12 h-full rounded-full bg-gradient-to-r from-purple-600 to-blue-500 transition-all duration-1000 ease-in-out"></div>
             </div>
           </div>
-          <div className="skill mt-6">
-            <div className=" mb-4 text-2xl">Backend</div>
-            <div className="w-full h-4 rounded-lg bg-gray-300 dark:bg-gray-50">
-              <div className=" w-4/5 h-full rounded-lg bg-purple-700 dark:bg-purple-500"></div>
+
+          <div className="skill mt-8">
+            <div className="flex justify-between mb-2">
+              <span className="text-2xl font-semibold">Backend</span>
+              <span className="text-xl font-medium">80%</span>
+            </div>
+            <div className="w-full h-5 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
+              <div className="w-4/5 h-full rounded-full bg-gradient-to-r from-purple-600 to-blue-500 transition-all duration-1000 ease-in-out"></div>
             </div>
           </div>
-          <div className="skill mt-6">
-            <div className=" mb-4 text-2xl">Programming</div>
-            <div className="w-full h-4 rounded-lg bg-gray-300 dark:bg-gray-50">
-              <div className=" w-4/5 h-full rounded-lg bg-purple-700 dark:bg-purple-500"></div>
+
+          <div className="skill mt-8">
+            <div className="flex justify-between mb-2">
+              <span className="text-2xl font-semibold">Programming</span>
+              <span className="text-xl font-medium">80%</span>
+            </div>
+            <div className="w-full h-5 rounded-full bg-gray-200 dark:bg-gray-700 overflow-hidden">
+              <div className="w-4/5 h-full rounded-full bg-gradient-to-r from-purple-600 to-blue-500 transition-all duration-1000 ease-in-out"></div>
             </div>
           </div>
         </div>
