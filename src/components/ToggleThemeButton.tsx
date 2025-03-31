@@ -3,8 +3,10 @@ import clsx from "clsx";
 import { FaMoon, FaSun } from "react-icons/fa6";
 
 export default function ToggleThemeButton() {
-  const { toggleDarkMode, isDarkMode } = useTheme();
+  const { toggleDarkMode, theme } = useTheme();
 
+  const isDarkMode = theme === "dark";
+  
   return (
     <label
       className="flex h-6 w-full cursor-pointer items-center"
