@@ -15,7 +15,7 @@ const NAVLINKS = [
 export default function Navbar() {
   const [navActive, setNavActive] = useState<boolean>(false);
   const listClassNames = clsx(
-    "md:static md:flex md:items-center overflow-y-hidden  md:text-base lg:text-xl  md:overflow-clip  ease-in transition-[height]  py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition text-xl absolute  left-0 right-0  top-14 border-b border-gray-700 md:border-none bg-background ",
+    "md:static md:flex md:items-center overflow-y-hidden  md:text-base lg:text-xl  md:overflow-clip  ease-in transition-[height]  py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition text-xl absolute  left-0 right-0  top-14 border-b border-gray-700 md:border-none bg-background md:bg-transparent ",
     {
       " h-72  pointer-events-auto": navActive,
       " h-0  pointer-events-none border-none": !navActive,
