@@ -15,15 +15,15 @@ const NAVLINKS = [
 export default function Navbar() {
   const [navActive, setNavActive] = useState<boolean>(false);
   const listClassNames = clsx(
-    "md:static md:flex md:items-center overflow-y-hidden  md:text-base lg:text-xl  md:overflow-clip  ease-in   py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition-all duration-300 md:duration-0 text-xl absolute  left-0 right-0  top-14 border-b border-gray-700 md:border-none bg-background md:bg-transparent ",
+    "md:static md:flex md:items-center overflow-y-hidden  mt-2.5 md:mt-0 md:text-base lg:text-xl  md:overflow-clip  ease-in   py-2 md:py-0 md:pointer-events-auto shadow-md md:shadow-none md:justify-between md:h-auto transition-all duration-300 md:duration-0 text-xl absolute  left-0 right-0  top-14 border-b border-gray-700 md:border-none bg-background md:bg-transparent ",
     {
-      " h-72  pointer-events-auto": navActive,
-      " h-0  pointer-events-none border-none": !navActive,
+      " h-72  pointer-events-auto visible": navActive,
+      " h-0  pointer-events-none border-none invisible": !navActive,
     }
   );
 
   return (
-    <nav className="p-4  sticky top-0  z-10 md:flex   md:items-center shadow-md md:justify-between border-b dark:border-gray-700 border-gray-200">
+    <nav className="p-4  sticky bg-white dark:bg-background top-0 z-10 md:flex   md:items-center shadow-md md:justify-between border-b dark:border-gray-700 border-gray-200">
       <Link href="/" className=" text-2xl">
         <span className=" text-gray-500">{"<"} </span>
         <span className=" text-purple-800 dark:text-gray-50  md:text-xl lg:text-3xl hover:text-indigo-500 mx-2 tracking-widest">
