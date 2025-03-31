@@ -6,7 +6,7 @@ export default function ToggleThemeButton() {
   const { toggleDarkMode, theme } = useTheme();
 
   const isDarkMode = theme === "dark";
-  
+
   return (
     <label
       className="flex h-6 w-full cursor-pointer items-center"
@@ -14,22 +14,22 @@ export default function ToggleThemeButton() {
     >
       <div
         className={clsx(
-          "relative inline-block  w-12 rounded-full transition-colors duration-300",
+          "relative inline-block  w-12 rounded-full transition-colors duration-300 group",
           isDarkMode ? "bg-blue-500" : "bg-gray-400"
         )}
       >
         <div
           className={`${
             isDarkMode ? "translate-x-6" : "translate-x-0"
-          } bg-white w-6 h-6 relative  flex items-center justify-center  rounded-full shadow-md transform transition-transform duration-300`}
+          } bg-white  dark:bg-gray-900 border dark:border-gray-700 border-gray-200 w-6 h-6 relative  flex items-center justify-center  rounded-full shadow-md transform transition-transform duration-300`}
         >
           {!isDarkMode ? (
             <span className="absolute text-yellow-500">
-              <FaSun />
+              <FaSun className=" h-4 w-4" />
             </span>
           ) : (
-            <span className="absolute text-purple-800">
-              <FaMoon />
+            <span className="absolute text-purple-800  dark:text-gray-50 dark:group-hover:text-gray-200">
+              <FaMoon className=" h-4 w-4" />
             </span>
           )}
         </div>
