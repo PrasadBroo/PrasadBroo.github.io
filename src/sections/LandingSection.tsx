@@ -73,7 +73,7 @@ export default function LandingSection() {
         <h1 className=" font-extrabold text-3xl md:text-5xl  text-center md:text-left">
           Hi all, I&apos;m Prasad
           <motion.img
-            className=" h-12 w-12 lg:h-16 lg:w-16 inline-block"
+            className=" h-12 w-12 lg:h-16 lg:w-16 inline-block ml-4 mb-8"
             src="images/hand.png"
             alt="hand"
             initial={{ rotate: 0 }}
