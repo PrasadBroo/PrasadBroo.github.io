@@ -10,6 +10,8 @@ import {
   FaEnvelope,
   FaLaptopCode,
   FaStackOverflow,
+  FaGamepad,
+  FaLightbulb,
 } from "react-icons/fa";
 import Image from "next/image";
 import clsx from "clsx";
@@ -84,13 +86,14 @@ export default function LandingSection() {
             }}
           />
         </h1>
-        <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-2xl  text-xl text-center md:text-left mt-8 tracking-wider">
-          <FaLaptopCode className="inline mr-3  text-purple-primary dark:text-white" />
-          I&apos;m Prasad, a MERN full-stack developer with experience building
-          visually appealing and functional web applications. When I&apos;m not
-          coding, I enjoy playing games <i className="fas fa-gamepad"></i> and
-          staying up-to-date with the latest web development trends.
-          <i className="fas fa-lightbulb text-yellow-500"></i>
+        <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-2xl  text-xl text-center md:text-left mt-8 tracking-wider text-balance">
+          <FaLaptopCode className="inline mr-3  text-purple-700 dark:text-white" />
+          I&apos;m Prasad, a Full Stack Developer with hands-on experience in
+          building scalable and visually appealing web applications. When
+          I&apos;m not coding, I enjoy playing games
+          <FaGamepad className="inline mx-2 text-blue-700 dark:text-white" />
+          and staying updated with the latest trends in web development.
+          <FaLightbulb className="inline mr-3 text-yellow-500 dark:text-white" />
         </p>
         <div className="social-links flex items-center justify-between lg:w-1/2 mt-6">
           {SOCIAL_LINKS.map((link) => (
