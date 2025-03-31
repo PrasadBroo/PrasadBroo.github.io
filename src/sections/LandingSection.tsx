@@ -33,25 +33,25 @@ const SOCIAL_LINKS = [
   {
     id: "linkedin",
     icon: <FaLinkedin />,
-    url: "https://www.linkedin.com/in/prasad-shinde/",
+    url: "https://www.linkedin.com/in/prasadshinde-dev/",
     className: "bg-blue-600 border dark:border-gray-700 border-gray-200",
   },
   {
     id: "twitter",
     icon: <FaTwitter />,
-    url: "https://twitter.com/prasad_bro",
+    url: "https://twitter.com/Prasad__bro",
     className: "bg-blue-400 border dark:border-gray-700 border-gray-200",
   },
   {
     id: "stackoverflow",
     icon: <FaStackOverflow />,
-    url: "https://stackoverflow.com/users/prasad-shinde",
+    url: "https://stackoverflow.com/users/12332711/prasadbro",
     className: "bg-orange-500 border dark:border-gray-700 border-gray-200",
   },
   {
     id: "email",
     icon: <FaEnvelope />,
-    url: "mailto:contact@prasadshinde.com",
+    url: "mailto:gainerinfo@gmail.com",
     className: "bg-red-500 border dark:border-gray-700 border-gray-200",
   },
 ];
