@@ -86,7 +86,7 @@ export default function LandingSection() {
             }}
           />
         </h1>
-        <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-2xl  text-xl text-center md:text-left mt-8 tracking-wider text-balance">
+        <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-2xl  text-xl md:text-left mt-8 tracking-wider text-balance text-center ">
           <FaLaptopCode className="inline mr-3  text-purple-700 dark:text-white" />
           I&apos;m Prasad, a Full Stack Developer with hands-on experience in
           building scalable and visually appealing web applications. When
@@ -113,13 +113,13 @@ export default function LandingSection() {
         <div className="btns mt-8 lg:w-1/2 flex items-center justify-between">
           <Link
             href="#contact"
-            className=" bg-purple-900  border-purple-700 border transition hover:bg-white hover:text-purple-600 dark:hover:text-purple-700  py-2 px-3 rounded-md uppercase text-white text-xl"
+            className=" bg-purple-900 text-sm  border-purple-700 border transition hover:bg-white hover:text-purple-600 dark:hover:text-purple-700  py-2 px-3 rounded-md uppercase text-white md:text-xl"
           >
             Contact Me
           </Link>
           <Link
             href="resume"
-            className=" bg-gray-900  border dark:border-gray-700 border-gray-200 transition hover:bg-white  hover:text-purple-600   py-2 px-3 rounded-md uppercase text-white text-xl"
+            className=" bg-gray-900 text-sm  border dark:border-gray-700 border-gray-200 transition hover:bg-white  hover:text-purple-600   py-2 px-3 rounded-md uppercase text-white md:text-xl"
           >
             My Resume
           </Link>
