@@ -19,7 +19,7 @@ export default function ProficiencySection() {
         className="flex-1 self-start w-full md:w-auto "
       >
         <div className="p-4 md:p-6 bg-white dark:bg-gray-800 rounded-xl border  shadow-lg dark:border-gray-700 border-gray-200">
-          <h2 className="text-5xl font-bold text-center md:text-left bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent mb-8">
+          <h2 className="sm:text-5xl text-4xl font-bold text-center md:text-left bg-gradient-to-r from-purple-700 to-blue-500 bg-clip-text text-transparent mb-8">
             Proficiency
           </h2>
 
