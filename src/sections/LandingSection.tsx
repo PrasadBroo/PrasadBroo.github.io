@@ -36,7 +36,7 @@ export default function LandingSection() {
             }}
           />
         </h1>
-        <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-2xl  text-xl md:text-left mt-8 tracking-wider text-balance text-center ">
+        <p className=" text-gray-500 dark:text-white lg:text-3xl md:text-base  text-xl md:text-left mt-8 tracking-wider text-balance text-center ">
           <FaLaptopCode className="inline mr-3  text-purple-700 dark:text-white" />
           I&apos;m Prasad, a Full Stack Developer with hands-on experience in
           building scalable and visually appealing web applications. When
