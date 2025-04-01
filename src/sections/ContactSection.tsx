@@ -1,5 +1,5 @@
 import SocialLinks from "@/components/SocialLinks";
-import { SOCIAL_LINKS } from "@/constants/user";
+import { SOCIAL_LINKS, USER } from "@/constants/user";
 import Image from "next/image";
 
 export default function ContactSection() {
@@ -25,8 +25,14 @@ export default function ContactSection() {
           <span className="text-xl font-medium text-gray-800 dark:text-white">
             Open for opportunities:
           </span>
-          <span className="ml-2 px-3 py-1 bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200 rounded-full text-sm font-medium">
-            Yes
+          <span
+            className={`ml-2 px-3 py-1 rounded-full text-sm font-medium ${
+              USER.openToOpportunities
+                ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+            }`}
+          >
+            {USER.openToOpportunities ? "Yes" : "No"}
           </span>
         </div>
         <SocialLinks social_links={SOCIAL_LINKS} />
@@ -35,7 +41,7 @@ export default function ContactSection() {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full blur-md opacity-30 animate-pulse"></div>
           <Image
-            src="/images/prasadbro.webp"
+            src={USER.profileImage}
             alt="prasad image"
             className="h-auto w-auto border-purple-600 dark:border-purple-700 rounded-full border-4 hover:scale-105 transition-transform duration-300 relative z-10"
             width={400}
