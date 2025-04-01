@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { ProjectType } from "../types/projectTypes";
 import Project from "@/components/Project";
 import { FaArrowRight, FaExclamationCircle } from "react-icons/fa";
+import { USER } from "@/constants/user";
 
 export default function ProjectsSection() {
   const ref = useRef(null);
@@ -15,7 +16,7 @@ export default function ProjectsSection() {
     (async () => {
       try {
         const data = await fetch(
-          "https://api.github.com/users/PrasadBroo/repos?type=owner&sort=updated&direction=desc&per_page=8"
+          `https://api.github.com/users/${USER.githubUsername}/repos?type=owner&sort=updated&direction=desc&per_page=81`
         );
         if (data.ok) {
           const jsonData = await data.json();
