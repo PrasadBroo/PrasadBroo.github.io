@@ -31,7 +31,7 @@ export default function Project({ project }: PropsType) {
       animate={isInView ? { opacity: 1 } : {}}
       transition={{ duration: 0.5 }}
       ref={ref}
-      className="project dark:hover:bg-purple-900 dark:border dark:rounded transition border dark:border-gray-700 border-gray-200 p-3 my-4 hover:shadow-lg flex flex-col "
+      className="project dark:hover:bg-purple-900 shadow-2xl dark:border dark:rounded transition border dark:border-gray-700 border-gray-200 p-3 my-4 hover:shadow-lg flex flex-col "
       href={project.html_url}
       target="_blank"
     >
