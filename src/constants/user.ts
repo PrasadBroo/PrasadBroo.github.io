@@ -9,6 +9,7 @@ import { SiLeetcode } from "react-icons/si";
 
 export const USER = {
   name: "Prasad",
+  githubUsername: "PrasadBroo",
   title: "Full Stack Developer",
   email: "gainerinfo@gmail.com",
   location: "Maharashtra, India",
