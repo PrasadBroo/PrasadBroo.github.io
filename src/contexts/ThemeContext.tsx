@@ -34,14 +34,12 @@ export function ThemeProvider({ children }: PropsType) {
   }, []);
 
   useEffect(() => {
-    console.log(theme);
     if (!theme) return;
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleDarkMode = () => {
-    console.log("I ran");
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
