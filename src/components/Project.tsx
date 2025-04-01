@@ -88,7 +88,7 @@ export default function Project({ project }: PropsType) {
           </div>
         </div>
         <div className="">
-          <span>{project.size} KB</span>
+          <span>{(project.size / 1024).toFixed(2)} MB</span>
         </div>
       </div>
     </motion.a>
