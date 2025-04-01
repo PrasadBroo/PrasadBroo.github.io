@@ -1,60 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { SiLeetcode } from "react-icons/si";
-
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTwitter,
-  FaEnvelope,
-  FaLaptopCode,
-  FaStackOverflow,
-  FaGamepad,
-  FaLightbulb,
-} from "react-icons/fa";
+import { FaLaptopCode, FaGamepad, FaLightbulb } from "react-icons/fa";
 import Image from "next/image";
-import clsx from "clsx";
-
-// Social links data with icons from react-icons
-const SOCIAL_LINKS = [
-  {
-    id: "github",
-    icon: <FaGithub />,
-    url: "https://github.com/PrasadBroo",
-    className: "bg-gray-700 border dark:border-gray-700 border-gray-200",
-  },
-  {
-    id: "leetcode",
-    icon: <SiLeetcode />,
-    url: "https://leetcode.com/u/Prasadbro/",
-    className: "bg-green-600 border dark:border-gray-700 border-gray-200",
-  },
-  {
-    id: "linkedin",
-    icon: <FaLinkedin />,
-    url: "https://www.linkedin.com/in/prasadshinde-dev/",
-    className: "bg-blue-600 border dark:border-gray-700 border-gray-200",
-  },
-  {
-    id: "twitter",
-    icon: <FaTwitter />,
-    url: "https://twitter.com/Prasad__bro",
-    className: "bg-blue-400 border dark:border-gray-700 border-gray-200",
-  },
-  {
-    id: "stackoverflow",
-    icon: <FaStackOverflow />,
-    url: "https://stackoverflow.com/users/12332711/prasadbro",
-    className: "bg-orange-500 border dark:border-gray-700 border-gray-200",
-  },
-  {
-    id: "email",
-    icon: <FaEnvelope />,
-    url: "mailto:gainerinfo@gmail.com",
-    className: "bg-red-500 border dark:border-gray-700 border-gray-200",
-  },
-];
+import { SOCIAL_LINKS, USER } from "@/constants/user";
+import SocialLinks from "@/components/SocialLinks";
 
 const varinats = {
   hidden: { opacity: 0 },
@@ -71,7 +21,7 @@ export default function LandingSection() {
     >
       <div className="flex-1 md:flex-[1.5] lg:flex-1">
         <h1 className=" font-extrabold text-3xl md:text-5xl  text-center md:text-left">
-          Hi all, I&apos;m Prasad
+          Hi all, I&apos;m {USER.name}
           <motion.img
             className=" h-12 w-12 lg:h-16 lg:w-16 inline-block ml-4 mb-8"
             src="images/hand.png"
@@ -95,21 +45,7 @@ export default function LandingSection() {
           and staying updated with the latest trends in web development.
           <FaLightbulb className="inline mr-3 text-yellow-500 dark:text-white" />
         </p>
-        <div className="social-links flex items-center justify-between lg:w-1/2 mt-6">
-          {SOCIAL_LINKS.map((link) => (
-            <Link
-              href={link.url}
-              target="_blank"
-              key={link.id}
-              className={clsx(
-                "h-10 w-10 rounded-full hover:bg-gray-800 text-white text-2xl flex items-center justify-center hover:scale-95 transition-transform",
-                link.className
-              )}
-            >
-              {link.icon}
-            </Link>
-          ))}
-        </div>
+        <SocialLinks social_links={SOCIAL_LINKS} />
         <div className="btns mt-8 lg:w-1/2 flex items-center justify-between">
           <Link
             href="#contact"
