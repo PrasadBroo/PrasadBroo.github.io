@@ -19,7 +19,7 @@ export default function ContactSection() {
           <span className="mr-3 text-purple-600 dark:text-purple-400">
             <i className="fa-solid fa-location-dot"></i>
           </span>
-          Maharashtra, India
+          {USER.location}
         </address>
         <div className="mt-4 flex items-center">
           <span className="text-xl font-medium text-gray-800 dark:text-white">
