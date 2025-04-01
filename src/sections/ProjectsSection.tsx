@@ -16,7 +16,7 @@ export default function ProjectsSection() {
     (async () => {
       try {
         const data = await fetch(
-          `https://api.github.com/users/${USER.githubUsername}/repos?type=owner&sort=updated&direction=desc&per_page=81`
+          `https://api.github.com/users/${USER.githubUsername}/repos?type=owner&sort=updated&direction=desc&per_page=8`
         );
         if (data.ok) {
           const jsonData = await data.json();
