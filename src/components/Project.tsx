@@ -37,7 +37,7 @@ export default function Project({ project }: PropsType) {
     >
       <div className="flex justify-between items-center gap-2">
         <div className=" flex-1 max-w-10/12 flex items-center gap-2 ">
-          <FaProjectDiagram className=" w-6 h-6 text-purple-70 dark:text-white shrink-0" />
+          <FaProjectDiagram className=" w-6 h-6 text-purple-700 dark:text-lime-400 shrink-0" />
 
           <h3 className=" text-2xl inline  px-1">
             <div className="line-clamp-1">
