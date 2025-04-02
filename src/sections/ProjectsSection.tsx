@@ -3,10 +3,6 @@ import Project from "@/components/Project";
 import { USER } from "@/constants/user";
 import { FaArrowRight } from "react-icons/fa";
 
-// type Props = {
-//   projects: ProjectType[];
-// };
-
 async function fetchGithubProjects(): Promise<ProjectType[]> {
   const data = await fetch(
     `https://api.github.com/users/${USER.githubUsername}/repos?type=owner&sort=updated&direction=desc&per_page=8`,
