@@ -2,8 +2,10 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ProjectType } from "@/types/projectTypes";
-import { FaFire, FaStar, FaBook } from "react-icons/fa";
+import { FaFire, FaStar, FaExternalLinkAlt } from "react-icons/fa";
 import { FaCodeFork } from "react-icons/fa6";
+import Link from "next/link";
+import { FaProjectDiagram } from "react-icons/fa";
 
 type PropsType = {
   project: ProjectType;
@@ -26,26 +28,34 @@ export default function Project({ project }: PropsType) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.7 });
   return (
-    <motion.a
+    <motion.div
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : {}}
       transition={{ duration: 0.5 }}
       ref={ref}
       className="project dark:hover:bg-purple-900 dark:bg-gray-800 shadow-2xl dark:border dark:rounded transition border dark:border-gray-700 border-gray-200 p-3 my-4 hover:shadow-lg flex flex-col "
-      href={project.html_url}
-      target="_blank"
     >
-      <div className="">
-        <FaBook className=" inline text-xl text-purple-70 dark:text-white" />
+      <div className="flex justify-between items-center gap-2">
+        <div className=" flex-1 max-w-10/12 flex items-center gap-2 ">
+          <FaProjectDiagram className=" w-6 h-6 text-purple-70 dark:text-white shrink-0" />
 
-        <h3 className=" text-2xl inline ml-4">
-          {project.name.split(/_|-/).join(" ")}
-          {project.archived && (
-            <sup className="archived bg-red-400 align-super text-white p-1 rounded-lg text-[10px]">
-              archived
-            </sup>
-          )}
-        </h3>
+          <h3 className=" text-2xl inline  px-1">
+            <div className="line-clamp-1">
+              {project.name.split(/_|-/).join(" ")}
+            </div>
+
+            {project.archived && (
+              <sup className="archived bg-red-400 align-super text-white p-1 rounded-lg text-[10px]">
+                archived
+              </sup>
+            )}
+          </h3>
+        </div>
+        <Link href={project.html_url} target="_blank">
+          <span className="text-gray-700 dark:text-gray-100 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+            <FaExternalLinkAlt className="h-5 w-5" />
+          </span>
+        </Link>
       </div>
       <div className="info mt-4 line-clamp-2 text-gray-700 dark:text-white h-14 overflow-hidden">
         <span className="text-orange-600 text-xl mr-2">
@@ -91,6 +101,6 @@ export default function Project({ project }: PropsType) {
           <span>{(project.size / 1024).toFixed(2)} MB</span>
         </div>
       </div>
-    </motion.a>
+    </motion.div>
   );
 }
