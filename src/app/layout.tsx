@@ -4,6 +4,7 @@ import "./globals.css";
 import clsx from "clsx";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/contexts/ThemeContext";
 
 const montserrat = Montserrat({
   variable: "--font-geist-montserrat",
@@ -67,9 +68,11 @@ export default function RootLayout({
           montserrat.className
         )}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
