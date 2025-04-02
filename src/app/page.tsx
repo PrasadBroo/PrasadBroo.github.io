@@ -5,7 +5,7 @@ import ProficiencySection from "@/sections/ProficiencySection";
 import ProjectsSection from "@/sections/ProjectsSection";
 import ContactSection from "@/sections/ContactSection";
 
-export default function Home() {
+export default async function Home() {
   return (
     <HomePageLayout>
       <LandingSection />
