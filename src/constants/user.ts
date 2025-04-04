@@ -57,3 +57,5 @@ export const SOCIAL_LINKS = [
     className: "bg-red-500 border dark:border-gray-700 border-gray-200",
   },
 ];
+
+export const DOMAIN_NAME = "prasadbro.com";
