@@ -23,52 +23,52 @@ const SKILLS = [
   {
     id: "html-5",
     icon: <FaHtml5 />,
-    borderColor: "dark:border-orange-600 border-gray-200",
+    borderColor: "dark:border-orange-600 dark:text-orange-600 border-gray-200",
   },
   {
     id: "css3",
     icon: <FaCss3Alt />,
-    borderColor: "dark:border-blue-500 border-gray-200",
+    borderColor: "dark:border-blue-500 dark:text-blue-500 border-gray-200",
   },
   {
     id: "sass",
     icon: <FaSass />,
-    borderColor: "dark:border-pink-500 border-gray-200",
+    borderColor: "dark:border-pink-500 dark:text-pink-500 border-gray-200",
   },
   {
     id: "javascript",
     icon: <FaJs />,
-    borderColor: "dark:border-yellow-4 border-gray-200",
+    borderColor: "dark:border-yellow-400 dark:text-yellow-400 border-gray-200",
   },
   {
     id: "react",
     icon: <FaReact />,
-    borderColor: "dark:border-cyan-400 border-gray-200",
+    borderColor: "dark:border-cyan-400 dark:text-cyan-400 border-gray-200",
   },
   {
     id: "nextjs",
     icon: <RiNextjsFill />,
-    borderColor: "dark:border-white border-gray-200",
+    borderColor: "dark:border-white dark:text-white border-gray-200",
   },
   {
     id: "nodejs",
     icon: <FaNodeJs />,
-    borderColor: "dark:border-green-50 border-gray-200",
+    borderColor: "dark:border-green-500 dark:text-green-500 border-gray-200",
   },
   {
     id: "database",
     icon: <FaDatabase />,
-    borderColor: "dark:border-gray-500 border-gray-200",
+    borderColor: "dark:border-gray-500 dark:text-gray-500 border-gray-200",
   },
   {
     id: "git",
     icon: <FaGitAlt />,
-    borderColor: "dark:border-red-500 border-gray-200",
+    borderColor: "dark:border-red-500 dark:text-red-500 border-gray-200",
   },
   {
     id: "typescript",
     icon: <SiTypescript />,
-    borderColor: "dark:border-blue-600 border-gray-200",
+    borderColor: "dark:border-blue-600 dark:text-blue-600 border-gray-200",
   },
 ];
 
@@ -118,7 +118,7 @@ export default function WhatIDoSection() {
             <div
               key={skill.id}
               className={clsx(
-                "m-2 h-12 w-12 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-2xl text-purple-700 dark:text-white hover:scale-110 transition-transform shadow-md hover:shadow-lg border",
+                "m-2 h-12 w-12 rounded-full bg-gray-200 dark:bg-gray-800 flex items-center justify-center text-2xl text-purple-700  hover:scale-110 transition-transform shadow-md hover:shadow-lg border",
                 skill.borderColor
               )}
             >
