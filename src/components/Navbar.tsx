@@ -23,8 +23,11 @@ export default function Navbar() {
   );
 
   return (
-    <nav className="p-4  sticky  bg-inherit top-0 z-10 md:flex   md:items-center shadow-md md:justify-between border-b dark:border-gray-700 border-gray-200">
-      <Link href="/" className=" text-2xl">
+    <nav
+      className="p-4  sticky  bg-inherit top-0 z-10 md:flex   md:items-center shadow-md md:justify-between border-b dark:border-gray-700 border-gray-200"
+      aria-label="Main navigation"
+    >
+      <Link href="/" className=" text-2xl" aria-label="Home page">
         <span className=" text-gray-500">{"<"} </span>
         <span className=" text-purple-800 dark:text-gray-50  md:text-xl lg:text-3xl hover:text-indigo-500 mx-2 tracking-widest">
           Prasadbro
@@ -35,6 +38,15 @@ export default function Navbar() {
         className="burger md:hidden inline-block float-right p-2"
         onClick={() => setNavActive(!navActive)}
         role="button"
+        tabIndex={0}
+        aria-expanded={navActive}
+        aria-label={navActive ? "Close menu" : "Open menu"}
+        aria-controls="main-menu"
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            setNavActive(!navActive);
+          }
+        }}
       >
         <div
           className={
@@ -55,19 +67,30 @@ export default function Navbar() {
           }
         ></div>
       </div>
-      <ul className={listClassNames}>
+      <ul
+        className={listClassNames}
+        id="main-menu"
+        role="menu"
+        aria-labelledby="main-menu-button"
+      >
         {NAVLINKS.map((link) => (
-          <a
-            href={link.href}
-            key={link.label}
-            className=" lg:mr-8 md:mr-4 ease-in  hover:bg-gray-200 dark:hover:bg-purple-800 rounded-xs dark:hover:bg-purple-primary p-3  block"
-          >
-            {link.label}
-          </a>
+          <li key={link.label} role="none">
+            <a
+              href={link.href}
+              className="lg:mr-8 md:mr-4 ease-in hover:bg-gray-200 dark:hover:bg-purple-800 rounded-xs dark:hover:bg-purple-primary p-3 block"
+              role="menuitem"
+              aria-label={link.label}
+            >
+              {link.label}
+            </a>
+          </li>
         ))}
-        <div className="switch p-3 hover:bg-gray-200 dark:hover:bg-purple-800 rounded-xs">
+        <li
+          role="none"
+          className="switch p-3 hover:bg-gray-200 dark:hover:bg-purple-800 rounded-xs"
+        >
           <ToggleThemeButton />
-        </div>
+        </li>
       </ul>
     </nav>
   );
