@@ -1,6 +1,6 @@
 import { ProjectType } from "../types/projectTypes";
 import Project from "@/components/Project";
-import { USER } from "@/constants/user";
+import { PRIVATE_PROJECTS, USER } from "@/constants/user";
 import { FaArrowRight } from "react-icons/fa";
 
 async function fetchGithubProjects(): Promise<ProjectType[]> {
@@ -25,6 +25,10 @@ export default async function ProjectsSection() {
         <div className="absolute animate-pulse -z-10 w-96 h-96 bg-purple-200/50 dark:bg-purple-600/30 rounded-full blur-3xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
 
         <div className="md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4">
+          {PRIVATE_PROJECTS.map((private_project) => (
+            // @ts-expect-error fx types
+            <Project project={private_project} key={private_project.id!} />
+          ))}
           {projects && projects.map((p) => <Project project={p} key={p.id} />)}
         </div>
 

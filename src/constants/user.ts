@@ -1,3 +1,4 @@
+import { ProjectType } from "@/types/projectTypes";
 import {
   FaGithub,
   FaLinkedin,
@@ -59,3 +60,20 @@ export const SOCIAL_LINKS = [
 ];
 
 export const DOMAIN_NAME = "prasadbro.com";
+
+export const PRIVATE_PROJECTS: Partial<ProjectType>[] = [
+  {
+    id: 65465465,
+    name: "LinkDB",
+    description:
+      "Create, visualize, and collaborate on database entity-relationship diagrams with the most intuitive ERD design tool. From concept to production-ready schemas in minutes, not hours.",
+    topics: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Clerk"],
+    private: true,
+    language: "TypeScript",
+    html_url: "https://linkdb.prasadbro.com/",
+    stargazers_count: 1565,
+    forks: 0,
+    size: 15239,
+    archived: false,
+  },
+];
