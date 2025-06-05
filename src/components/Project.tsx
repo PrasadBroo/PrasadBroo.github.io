@@ -51,9 +51,14 @@ export default function Project({ project }: PropsType) {
             )}
           </h3>
         </div>
-        <Link href={project.html_url} target="_blank">
+        <Link
+          href={project.html_url}
+          target="_blank"
+          aria-label={`View ${project.name} on GitHub`}
+          rel="noopener noreferrer"
+        >
           <span className="text-gray-700 dark:text-gray-100 hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
-            <FaExternalLinkAlt className="h-5 w-5" />
+            <FaExternalLinkAlt className="h-5 w-5" aria-hidden="true" />
           </span>
         </Link>
       </div>
