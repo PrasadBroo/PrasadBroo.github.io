@@ -40,6 +40,9 @@ export default function ToggleThemeButton() {
           className="opacity-0 absolute w-full h-full"
           checked={isDarkMode}
           onChange={toggleDarkMode}
+          aria-label="Toggle dark mode"
+          aria-checked={isDarkMode}
+          role="switch"
         />
       </div>
     </label>
